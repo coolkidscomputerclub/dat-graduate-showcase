@@ -9,6 +9,10 @@ html(lang="en", class="no-js")
         link(rel="stylesheet", href="/css/main.css")
         // Replace with production version
         script(src="js/components/modernizr/modernizr.js")
+        script(src="//use.typekit.net/eod3fja.js")
+        script
+            try { Typekit.load(); }
+            catch(e) {}
     body
         include includes/header
         block content

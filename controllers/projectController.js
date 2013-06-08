@@ -14,7 +14,7 @@ var projectController = {
 
         projects.getProjects().then(function (projects) {
 
-            res.render("index", {
+            res.render("projects", {
                 debugMode: debugMode,
                 title: "Projects",
                 projects: JSON.stringify(projects)
