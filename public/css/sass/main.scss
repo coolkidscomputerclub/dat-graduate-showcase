@@ -1,6 +1,7 @@
 @import "normalize";
 @import "helpers";
 @import "mixins";
+@import "color";
 
 $color: #222;
 $gray: #e5e5e5;
@@ -9,6 +10,13 @@ $highlight: rgb(0, 193, 156);
 $font-size: 14;
 $font-family: helvetica, arial, verdana, sans-serif;
 $text-highlight-color: #b3d4fc;
+$site-width: 1280px;
+
+%container {
+    max-width: $site-width;
+    margin: 0 auto;
+    padding: 0 30px;
+}
 
 html {
     font-size: 62.5%;
@@ -44,7 +52,7 @@ body {
 }
 
 html {
-    background: $gray;
+    background: $background;
 }
 
 body {
@@ -52,5 +60,33 @@ body {
     margin: 0 auto;
     padding: 50px 0 40px;
 }
+
+/* # Header
+================================================== */
+
+@import "includes/header";
+
+/* # Main Content
+================================================== */
+
+.main {
+    @extend %container;
+}
+
+.projects {
+    .project {
+        display: inline-block;
+        width: 25%;
+        background: $primary;
+    }
+}
+
+/* # Footer
+================================================== */
+
+@import "includes/footer";
+
+/* # Media Queries
+================================================== */
 
 @import "media-queries";

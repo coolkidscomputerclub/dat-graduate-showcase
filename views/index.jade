@@ -1,9 +1,29 @@
 extends layout
 
 block content
-    h1= title
-    p Welcome to #{title}
-    p Projects: #{projects}
-    p Project: #{project}
-    p Students: #{students}
-    p Student: #{student}
+    main(class="main", id="main", role="main")
+        h2= title
+        p Welcome to #{title}
+
+        p Projects: #{projects}
+        p Project: #{project}
+        p Students: #{students}
+        p Student: #{student}
+
+        .projects
+            .project
+                .project-image
+                    img(src="http://placekitten.com/500/500")
+                h2.project-title Project Title
+            .project
+                .project-image
+                    img(src="http://placekitten.com/500/500")
+                h2.project-title Project Title
+            .project
+                .project-image
+                    img(src="http://placekitten.com/500/500")
+                h2.project-title Project Title
+            .project
+                .project-image
+                    img(src="http://placekitten.com/500/500")
+                h2.project-title Project Title

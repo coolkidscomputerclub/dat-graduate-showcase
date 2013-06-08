@@ -10,7 +10,9 @@ html(lang="en", class="no-js")
         // Replace with production version
         script(src="/js/components/modernizr/modernizr.js")
     body
+        include includes/header
         block content
+        include includes/footer
         script
             var config = {
                 debug: #{debugMode}
