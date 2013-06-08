@@ -39,7 +39,7 @@ var projectController = {
                 res.render("index", {
                     debugMode: debugMode,
                     title: "Projects",
-                    project: project
+                    project:JSON.stringify(project)
                 });
 
             }
