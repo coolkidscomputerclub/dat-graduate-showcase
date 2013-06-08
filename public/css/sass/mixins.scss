@@ -1,0 +1,23 @@
+@mixin font-size($value) {
+  font-size: $value + px;
+  font-size: ($value / 10) + rem;
+}
+
+@mixin line-height($value) {
+  line-height: $value + px;
+  line-height: ($value / 10) + rem;
+}
+
+@mixin at2x($image_name, $w: auto, $h: auto, $extention: ".png") {
+  background-image: url($image_name + $extention);
+  $x2img: $image_name + "@2x" + $extention;
+
+  @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+    background-image: url($x2img);
+    background-size: $w $h;
+  }
+}
+
+@mixin font-family-sans-serif ($primary-font) {
+    font-family: $primary-font, helvetica, arial, verdana, sans-serif;
+}

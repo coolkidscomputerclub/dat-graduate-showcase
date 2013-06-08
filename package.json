@@ -1,0 +1,19 @@
+{
+    "name": "dat-degree-show",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node app"
+    },
+    "dependencies": {
+        "express": "*",
+        "jade": "*"
+    },
+    "devDependencies": {
+        "grunt": "*",
+        "grunt-contrib-requirejs": "*",
+        "grunt-contrib-sass": "*",
+        "grunt-contrib-watch": "*",
+        "grunt-contrib-jshint": "*"
+    }
+}

@@ -1,0 +1,21 @@
+doctype 5
+html(lang="en", class="no-js")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0")
+        block title
+            title= title
+        meta(name="description", content="Digital Art & Technology 2013 Graduate Showcase.")
+        link(rel="stylesheet", href="css/main.css")
+        // Replace with production version
+        script(src="js/components/modernizr/modernizr.js")
+    body
+        block content
+        script
+            var config = {
+                debug: #{debug}
+            };
+        if debug
+            script(src="/js/components/requirejs/require.js", data-main="/js/main.js")
+        else
+            script(src="/js/main.min.js")
