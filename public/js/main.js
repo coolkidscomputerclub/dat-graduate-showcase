@@ -10,13 +10,13 @@ requirejs.config({
     }
 });
 
-requirejs(["jquery", "modules/example", "modules/retinafy", "modules/analytics", "utilities/log"], function ($, example, retinafy, analytics) {
+requirejs(["jquery", "modules/sequence", "modules/retinafy", "modules/analytics", "utilities/log"], function ($, sequence, retinafy, analytics) {
 
     var app = {
 
         Modules: {
 
-            example: example,
+            sequence: sequence,
 
             retinafy: retinafy,
 

@@ -3,6 +3,7 @@
  */
 
 var mongoose = require("mongoose"),
+    _ = require("underscore"),
     $ = require("jquery-deferred");
 
 /**
@@ -11,30 +12,32 @@ var mongoose = require("mongoose"),
 
 var database = {
 
+    name: "degree-show",
+
     connect: function () {
 
         var connection,
             def = $.Deferred();
 
-        mongoose.connect("mongodb://localhost/degree-show");
+        mongoose.connect("mongodb://localhost/" + this.name);
 
         connection = mongoose.connection;
 
-        connection.on("error", this.error);
+        connection.on("error", function (error) {
+
+            console.log("Database connection error: ", error);
+
+            def.reject(error);
+
+        });
 
         connection.once("open", function () {
 
-            def.resolve();
+            def.resolve(this.name);
 
         });
 
         return def;
-
-    },
-
-    error: function (error) {
-
-        console.log("Database connection error: ", error);
 
     },
 
@@ -45,5 +48,7 @@ var database = {
     }
 
 };
+
+_.bindAll(database);
 
 module.exports = database;

@@ -8,9 +8,9 @@
   line-height: ($value / 10) + rem;
 }
 
-@mixin at2x($image_name, $w: auto, $h: auto, $extention: ".png") {
-  background-image: url($image_name + $extention);
-  $x2img: $image_name + "@2x" + $extention;
+@mixin at2x($image_name, $w: auto, $h: auto, $extension: ".png") {
+  background-image: url($image_name + $extension);
+  $x2img: $image_name + "@2x" + $extension;
 
   @media all and (-webkit-min-device-pixel-ratio: 1.5) {
     background-image: url($x2img);

@@ -2,9 +2,9 @@
  * Dependencies
  */
 
-var _ = require("underscore"),
+var Entry = require("../models/Entry"),
     helpers = require("./helpers"),
-    Entry = require("../models/Entry"),
+    _ = require("underscore"),
     $ = require("jquery-deferred");
 
 /**
