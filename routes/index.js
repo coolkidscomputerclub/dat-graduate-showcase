@@ -2,8 +2,7 @@
  * Dependencies
  */
 
-var studentController = require("../controllers/studentController"),
-    projectController = require("../controllers/projectController");
+var applicationController = require("../controllers/applicationController");
 
 /**
  * Routes Object
@@ -15,23 +14,13 @@ var routes = {
 
         // standard gets
 
-        app.get("/", projectController.index);
+        app.get("/", applicationController.index);
 
-        app.get("/projects/:slug?", projectController.single);
-
-        app.get("/students", studentController.index);
-
-        app.get("/students/:slug?", studentController.single);
+        app.get("/:model(projects|students)/:slug?", applicationController.single);
 
         // CMS posts
 
-        app.post("/projects/add", projectController.addProjects);
-
-        app.post("/projects/edit", projectController.editProjects);
-
-        app.post("/students/add", studentController.addStudents);
-
-        app.post("/students/edit", studentController.editStudents);
+        app.post("/entries/add", applicationController.add);
 
     }
 
