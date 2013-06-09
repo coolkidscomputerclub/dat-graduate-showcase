@@ -14,9 +14,13 @@ var routes = {
 
         // standard gets
 
-        app.get("/", applicationController.index);
+        app.get("/", applicationController.projects);
 
-        app.get("/:model(projects|students)/:slug?", applicationController.single);
+        app.get("/students?", applicationController.students);
+
+        app.get("/projects/:slug?", applicationController.project);
+
+        app.get("/students/:slug?", applicationController.student);
 
         // CMS posts
 
