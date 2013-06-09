@@ -11,26 +11,38 @@ var entries = require("../modules/entries"),
 
 var entryController = {
 
-    index: function (req, res) {
+    projects: function (req, res) {
 
         entries.getEntries().then(function (entries) {
 
-            res.render("index", {
+            res.render("projects", {
                 debugMode: debugMode,
-                title: "Entries",
-                entries: JSON.stringify(entries)
+                title: "Projects",
+                entries: entries
             });
 
         });
 
     },
 
-    single: function (req, res) {
+    students: function (req, res) {
 
-        var model = req.params.model,
-            slug = req.params.slug;
+        entries.getEntries().then(function (entries) {
 
-        query = (model === "students") ? { "student.slug": slug } : { "project.slug":  slug } ;
+            res.render("students", {
+                debugMode: debugMode,
+                title: "Students",
+                entries: entries
+            });
+
+        });
+
+    },
+
+    project: function (req, res) {
+
+        var slug = req.params.slug,
+            query = { "project.slug": slug };
 
         console.log("Query: ", query);
 
@@ -42,10 +54,37 @@ var entryController = {
 
             } else {
 
-                res.render("index", {
+                res.render("project", {
                     debugMode: debugMode,
-                    title: "Entry",
-                    entry: JSON.stringify(entry)
+                    title: "Project",
+                    entry: entry
+                });
+
+            }
+
+        });
+
+    },
+
+    student: function (req, res) {
+
+        var slug = req.params.slug,
+            query = { "student.slug": slug };
+
+        console.log("Query: ", query);
+
+        entries.getEntry(query).then(function (entry) {
+
+            if (entry === null) {
+
+                res.send(404);
+
+            } else {
+
+                res.render("student", {
+                    debugMode: debugMode,
+                    title: "Student",
+                    entry: entry
                 });
 
             }
