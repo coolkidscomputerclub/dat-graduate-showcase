@@ -2,7 +2,23 @@ extends layout
 
 block content
     main(class="main", id="main", role="main")
-        h2= title
-        p Welcome to #{title}
-        p Entries: #{entries}
-        p Entry: #{entry}
+        header.project-header
+            .featured-image
+                img(src="/img/pique-featured.jpg")
+        section.single-project
+            .project-details
+                h2.project-title #{entry.project.title}
+                h3.student #{entry.student.name}
+            .project-description
+                p Message Box is a context-aware, tangible and digital interface for mobile voicemail. It instantiates incoming messages as physical marbles which can be used to playback their corresponging audio files. A web-based interface provides more fine-grained interaction opportunities.
+                p Based on user input and google latitude data Message Box diverts incoming calls, prompting the caller to leave a message if the recipient is busy, or connecting the call if the user is either available or not in the vicinity the box.
+                p Message Box is heavily inspired by Durrell Bishop’s Marble Answer Machine.
+            section.tags
+                each tag in entry.project.tags
+                    p.tag #{tag}
+            section.about-student
+                .student-image
+                    img(src="http://placekitten.com/300/300")
+                .student-details
+
+

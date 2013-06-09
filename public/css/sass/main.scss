@@ -17,9 +17,14 @@ $site-width: 1290px;
     margin: 0 auto;
     padding: 0 15px;
 
-    @include breakpoint(large)  { width: $site-width; }
-    @include breakpoint(medium) { width: 990px; }
-    @include breakpoint(small)  { width: 400px; }
+    // 3-column
+    @include breakpoint(large)  { background: green;    width: 970px; }
+
+    // 2-column
+    @include breakpoint(medium) { background: red;      width: 650px; }
+
+    // 1-column
+    @include breakpoint(small)  { background: blue;     width: 330px; }
 }
 
 html {
@@ -56,13 +61,12 @@ body {
 }
 
 html {
-    background: $background;
+    background: $white;
 }
 
 body {
     position: relative;
     margin: 0 auto;
-    padding: 50px 0 40px;
 }
 
 /* # Header
@@ -74,15 +78,19 @@ body {
 ================================================== */
 
 .main {
-    @extend %container;
 }
 
-/* # Projects
+/* # Projects Gallery
 ================================================== */
 
 @import "includes/projects";
 
-/* # Footer
+/* # Single Project View
+================================================== */
+
+@import "includes/project";
+
+/* # Global Footer
 ================================================== */
 
 @import "includes/footer";

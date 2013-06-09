@@ -7,66 +7,13 @@ block content
         // entries object contains multiple { student: {}, project: {} } objects
 
         section.projects
-            article.project
-                .project-image
-                    img(src="http://placehold.it/300&text=project+thumbnail")
-                .project-details
-                    h3.project-title Command Control
-                    p.student Sam Billingham
-                    p.description Art party McSweeney's pour-over consequat, you probably haven't heard of them gastropub cred sunt authentic.
+            each entry in entries
+                article.project
+                    .project-image
+                        a(href="projects/#{entry.project.slug}")
+                            img(src="img/#{entry.project.images[0]}")
+                    .project-details
+                        h3.project-title #{entry.project.title}
+                        p.student #{entry.student.name}
+                        //p.description #{entry.project.description}
 
-            article.project
-                .project-image
-                    img(src="http://placehold.it/300&text=project+thumbnail")
-                .project-details
-                    h3.project-title Message Box
-                    p.student Saul Hardman
-                    p.description Art party McSweeney's pour-over consequat, you probably haven't heard of them gastropub cred sunt authentic.
-
-            article.project
-                .project-image
-                    img(src="http://placehold.it/300&text=project+thumbnail")
-                .project-details
-                    h3.project-title Pique
-                    p.student Ben Ashman
-                    p.description Art party McSweeney's pour-over consequat, you probably haven't heard of them gastropub cred sunt authentic.
-
-            article.project
-                .project-image
-                    img(src="http://placehold.it/300&text=project+thumbnail")
-                .project-details
-                    h3.project-title Vulpt
-                    p.student Phil Rose
-                    p.description Art party McSweeney's pour-over consequat, you probably haven't heard of them gastropub cred sunt authentic.
-
-            article.project
-                .project-image
-                    img(src="http://placehold.it/300&text=project+thumbnail")
-                .project-details
-                    h3.project-title Command Control
-                    p.student Sam Billingham
-                    p.description Art party McSweeney's pour-over consequat, you probably haven't heard of them gastropub cred sunt authentic.
-
-            article.project
-                .project-image
-                    img(src="http://placehold.it/300&text=project+thumbnail")
-                .project-details
-                    h3.project-title Message Box
-                    p.student Saul Hardman
-                    p.description Art party McSweeney's pour-over consequat, you probably haven't heard of them gastropub cred sunt authentic.
-
-            article.project
-                .project-image
-                    img(src="http://placehold.it/300&text=project+thumbnail")
-                .project-details
-                    h3.project-title Pique
-                    p.student Ben Ashman
-                    p.description Art party McSweeney's pour-over consequat, you probably haven't heard of them gastropub cred sunt authentic.
-
-            article.project
-                .project-image
-                    img(src="http://placehold.it/300&text=project+thumbnail")
-                .project-details
-                    h3.project-title Vulpt
-                    p.student Phil Rose
-                    p.description Art party McSweeney's pour-over consequat, you probably haven't heard of them gastropub cred sunt authentic.

@@ -32,13 +32,55 @@
             }
         },
         "project": {
-            "title": "pique",
+            "title": "Pique",
             "description": "Take a pique at my balls, yo.",
-            "tags": ["Mobile", "iOS"],
+            "tags": ["Mobile", "iOS", "RubyMotion", "Photo", "App"],
             "images": 2,
             "vimeoURL": "http://vimeo.com/67979764",
             "links": {
                 "website": "http://pique.in"
+            }
+        }
+    },
+    {
+        "student": {
+            "name": "Sam Billingham",
+            "pathway": "Interaction Design",
+            "bio": "He's a coolest guy.",
+            "links": {
+                "twitter": "http://twitter.com/sambillingham",
+                "website": "http://sambillingham.com/"
+            }
+        },
+        "project": {
+            "title": "Command Control",
+            "description": "Wiggle the ectosphere!",
+            "tags": ["Game", "Arduino", "MQTT", "Physical", "Websockets", "Socket.io", "Node.js"],
+            "images": 2,
+            "vimeoURL": "https://vimeo.com/67979772",
+            "links": {
+                "website": "http://commandcontrol.co"
+            }
+        }
+    },
+    {
+        "student": {
+            "name": "Phil Rose",
+            "pathway": "Interaction Design",
+            "bio": "A guy that is cool.",
+            "links": {
+                "twitter": "https://twitter.com/PRtheRose",
+                "website": "http://phil-rose.co.uk/"
+            }
+        },
+        "project": {
+            "title": "Vulpt",
+            "description": "A description for Vulpt.",
+            "tags": ["OpenNI", "Processing", "Node.js", "Socket.io", "Three.js"],
+            "images": 2,
+            "vimeoURL": "https://vimeo.com/67658297",
+            "links": {
+                "website": "http://phil-rose.co.uk/vulpt"
             }
         }
     }]

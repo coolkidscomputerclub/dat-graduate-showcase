@@ -1,7 +1,7 @@
 // Projects gallery
 
 .projects {
-
+    @extend %container;
 }
 
 // Single project
@@ -9,19 +9,30 @@
 .project {
     display: inline-block;
     width: 300px;
-    margin: 0 20px 30px 0;
-    background: $background;
-    border: 1px solid $white;
-    &:nth-of-type(4n+4) { margin: 0; }
-
-    @include breakpoint(large) {
-        &:nth-of-type(3n+3) { margin: 0; }
+    margin: 0 20px 20px 0;
+    //background: $background;
+    &:nth-child(4n) {
+        margin: 0;
     }
 
+    // 3-column
+    @include breakpoint(large) {
+        &:nth-child(3n) { margin: 0; }
+    }
+
+    // 2-column
+    @include breakpoint(medium) {
+        &:nth-child(even) { margin: 0; }
+    }
+
+    // 1-column
+    @include breakpoint(small) {
+        margin: 0 0 20px 0;
+    }
 
     .project-image {
-        background: #CDCDCD;
-        border: 15px solid $green;
+        background: $white;
+        border: 5px solid $gold;
 
         img {
             width: 100%;
@@ -30,8 +41,11 @@
     }
 
     .project-details {
-        padding: 25px;
+        position: relative;
+        z-index: 100;
+        padding: 35px 25px;
         text-align: center;
+        background: $white;
 
         .project-title {
             @include font-size(20);
@@ -41,24 +55,18 @@
             text-transform: uppercase;
             font-family: "orator-std";
             font-weight: 400;
-            margin: 0.5em 0 0.9em 0;
+            margin: 0;
         }
 
         .student {
-            @include font-size(12);
+            @include font-size(10);
             text-transform: uppercase;
-            letter-spacing: 3px;
-            font-family: "minion-pro";
+            letter-spacing: 5px;
+            font-family: "ff-tisa-web-pro";
             font-weight: 400;
-            line-height: 0.7em;
-            color: #999999;
-            margin: 0 0 30px 0;
-        }
-
-        .description {
-            font-family: "minion-pro";
-            color: #666666;
-            text-align: left;
+            //line-height: 0.7em;
+            color: $gold;
+            margin: 10px 0 0 0;
         }
 
     }

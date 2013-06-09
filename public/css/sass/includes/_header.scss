@@ -1,12 +1,19 @@
 .site-header {
-    @extend %container;
-    margin: 0 auto 80px auto;
+    margin: 0 auto;
+    background: $white;
+
+    .header-inner {
+        @extend %container;
+        padding: 20px 0;
+    }
 
     h1 {
         @include font-size(32);
+        margin: 0;
         text-align: center;
         text-transform: uppercase;
         font-family: "orator-std";
         font-weight: 400;
+        color: $gold;
     }
 }

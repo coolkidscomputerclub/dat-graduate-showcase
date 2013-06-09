@@ -26,12 +26,12 @@
 
 @mixin breakpoint($point) {
   @if $point == large {
-    @media (max-width: 1000px) { @content; }
+    @media (max-width: 1289px) and (min-width: 970px) { @content; }
   }
   @else if $point == medium {
-    @media (max-width: 66666600px) { @content; }
+    @media (max-width: 969px) { @content; }
   }
   @else if $point == small {
-    @media (max-width: 200px) { @content; }
+    @media (max-width: 629px) { @content; }
   }
 }
