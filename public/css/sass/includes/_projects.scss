@@ -9,10 +9,10 @@
 
 .project {
     display: inline-block;
-    width: 300px;
-    margin: 0 20px 20px 0;
+    width: 290px;
+    margin: 0 45px 45px 0;
     //background: $background;
-    &:nth-child(4n) {
+    &:nth-child(3n) {
         margin: 0;
     }
 
@@ -37,7 +37,11 @@
         height: 290px;
         overflow: hidden;
         background: $white;
-        border: 5px solid $gold;
+        border: 15px solid $black;
+
+        &:hover {
+            border: 15px solid $gold;
+        }
 
         img {
             width: 100%;

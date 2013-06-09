@@ -16,20 +16,24 @@ block content
             section.tags
                 each tag in entry.project.tags
                     p.tag #{tag}
-            section.about-student
+        section.about-student
+            .about-student-inner
                 .student-image
-                    img(src="http://placekitten.com/300/300")
+                    img(src="http://placekitten.com/100/100")
                 .student-details
                     .whois
-                        h2 #{entry.student.name}
-                        p Pathway: #{entry.student.pathway}
+                        h2.student-name #{entry.student.name}
+                        p.pathway Digital Art &amp; Technology (#{entry.student.pathway})
+                        ul.links
+                            if entry.student.links.website
+                                li
+                                    a.student-link(href="#{entry.student.links.website}") Personal website
+                            if entry.student.links.twitter
+                                li
+                                    a.student-link(href="#{entry.student.links.twitter}") Twitter
                     .bio
-                        p #{entry.student.bio}
-                    .links
-                        if entry.student.links.website
-                            a(href="#{entry.student.links.website}") website
-                        if entry.student.links.twitter
-                            a(href="#{entry.student.links.twitter}") twitter
+                        p Irony four loko umami, Echo Park hoodie cardigan PBR Vice tofu pork belly tattooed aesthetic.
+
 
 
 

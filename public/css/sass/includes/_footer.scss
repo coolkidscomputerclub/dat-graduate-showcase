@@ -1,3 +1,4 @@
 .site-footer {
     @extend %container;
+    border-top: 1px solid $grey-light;
 }
