@@ -25,14 +25,11 @@
 // Media Queries
 
 @mixin breakpoint($point) {
-  @if $point == largest {
-    @media (min-width: 1600px) { @content; }
-  }
-  @else if $point == large {
-    @media (max-width: 1200px) { @content; }
+  @if $point == large {
+    @media (max-width: 1000px) { @content; }
   }
   @else if $point == medium {
-    @media (max-width: 800px) { @content; }
+    @media (max-width: 66666600px) { @content; }
   }
   @else if $point == small {
     @media (max-width: 200px) { @content; }

@@ -16,6 +16,10 @@ $site-width: 1290px;
     width: $site-width;
     margin: 0 auto;
     padding: 0 15px;
+
+    @include breakpoint(large)  { width: $site-width; }
+    @include breakpoint(medium) { width: 990px; }
+    @include breakpoint(small)  { width: 400px; }
 }
 
 html {
