@@ -72,13 +72,8 @@ body {
     position: absolute;
     left: 290px;
     top: 0;
-    width: 290px;
+    width: 2900px;
     height: 290px;
-    @include at2x("../img/test-sequence", 2900px, 290px, ".jpg");
-    background-repeat: no-repeat;
-    &.active {
-        left: 0;
-    }
 }
 
 /* # Header

@@ -6,7 +6,7 @@ define(["jquery"], function ($) {
 
         selector: ".sequence",
 
-        interval: 100,
+        interval: 1000,
 
         active: false,
 
@@ -46,17 +46,7 @@ define(["jquery"], function ($) {
 
             this.active = true;
 
-            $el.addClass("active");
-
-            this.timeout = setTimeout(function () {
-
-                if (self.active === true) {
-
-                    self.stepSequence($el);
-
-                }
-
-            }, this.interval);
+            this.stepSequence($el);
 
         },
 
@@ -68,10 +58,8 @@ define(["jquery"], function ($) {
 
             this.frame = 1;
 
-            $el.removeClass("active");
-
             $el.css({
-                "background-position": "0px 0px"
+                "left": this.frameWidth
             });
 
         },
@@ -81,22 +69,12 @@ define(["jquery"], function ($) {
             var self = this,
                 pos;
 
-            if (this.frame === this.frames) {
-
-                this.frame = 1;
-
-            } else {
-
-                this.frame++;
-
-            }
-
             pos = (this.frame - 1) * -this.frameWidth;
 
-            pos += "px 0px";
+            console.log("Pos: ", pos);
 
             $el.css({
-                "background-position": pos
+                "left": pos + "px"
             });
 
             this.timeout = setTimeout(function () {
@@ -108,6 +86,16 @@ define(["jquery"], function ($) {
                 }
 
             }, this.interval);
+
+            if (this.frame === this.frames) {
+
+                this.frame = 1;
+
+            } else {
+
+                this.frame++;
+
+            }
 
         }
 
