@@ -71,8 +71,6 @@ define(["jquery"], function ($) {
 
             pos = (this.frame - 1) * -this.frameWidth;
 
-            console.log("Pos: ", pos);
-
             $el.css({
                 "left": pos + "px"
             });

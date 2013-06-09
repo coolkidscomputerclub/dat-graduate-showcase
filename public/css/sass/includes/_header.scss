@@ -7,13 +7,21 @@
         padding: 20px 0;
     }
 
-    h1 {
+    .banner {
         @include font-size(32);
-        margin: 0;
+        margin: 0 0 60px;
         text-align: center;
         text-transform: uppercase;
-        font-family: "orator-std";
+        font-family: $orator;
         font-weight: 400;
         color: $gold;
+    }
+
+    .description {
+        margin: 0 0 0 20%;
+        width: 40%;
+        @include font-size(18);
+        font-weight: 400;
+        text-align: left;
     }
 }
