@@ -20,5 +20,15 @@ block content
                 .student-image
                     img(src="http://placekitten.com/300/300")
                 .student-details
+                    .whois
+                        h2 #{entry.student.name}
+                        p Pathway: #{entry.student.pathway}
+                    .bio
+                        p #{entry.student.bio}
+                    .links
+                        a(href="#{entry.student.links.twitter}") website
+                        a(href="#{entry.student.links.twitter}") twitter
+
+
 
 
