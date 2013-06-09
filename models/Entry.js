@@ -25,7 +25,11 @@ var EntrySchema = mongoose.Schema({
         title: String,
         description: String,
         tags: [String],
-        images: [String],
+        images: {
+            gallery: String,
+            featured: String,
+            sequence: String
+        },
         vimeoURL: String,
         links: {
             website: String

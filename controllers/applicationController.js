@@ -66,33 +66,6 @@ var entryController = {
 
     },
 
-    student: function (req, res) {
-
-        var slug = req.params.slug,
-            query = { "student.slug": slug };
-
-        console.log("Query: ", query);
-
-        entries.getEntry(query).then(function (entry) {
-
-            if (entry === null) {
-
-                res.send(404);
-
-            } else {
-
-                res.render("student", {
-                    debugMode: debugMode,
-                    title: "Student",
-                    entry: entry
-                });
-
-            }
-
-        });
-
-    },
-
     add: function (req, res) {
 
         console.log("Add entries req: ", req.body.entries);

@@ -77,10 +77,9 @@ var entries = {
 
         var def = $.Deferred(),
             defs = [],
-            callback,
             i,
             j,
-            imageCount;
+            slug;
 
         for (i = 0, j = data.length; i < j; i++) {
 
@@ -88,19 +87,13 @@ var entries = {
 
             data[i].student.profileImage = "/img/" + data[i].student.slug + ".jpg";
 
-            data[i].project.slug = helpers.toSlug(data[i].project.title);
+            slug = data[i].project.slug = helpers.toSlug(data[i].project.title);
 
-            imageCount = data[i].project.images;
-
-            data[i].project.images = [];
-
-            while (imageCount > 0) {
-
-                data[i].project.images.push(data[i].project.slug + "-" + imageCount +".jpg");
-
-                imageCount--;
-
-            }
+            data[i].project.images = {
+                gallery: "/img/" + slug + "-gallery.jpg",
+                featured: "/img/" + slug + "-featured.jpg",
+                sequence: "/img/" + slug + "-sequence.jpg"
+            };
 
             console.log("Upserting: ", data[i]);
 
