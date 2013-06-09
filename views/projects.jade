@@ -11,7 +11,8 @@ block content
                 article.project
                     .project-image
                         a(href="projects/#{entry.project.slug}")
-                            img(src="img/#{entry.project.images[0]}")
+                            img(src="#{entry.project.images[0]}")
+                            img.sequence(src="/img/test-sequence.jpg", height="290", width="2900")
                     .project-details
                         h3.project-title #{entry.project.title}
                         p.student #{entry.student.name}
