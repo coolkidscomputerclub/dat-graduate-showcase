@@ -21,3 +21,20 @@
 @mixin font-family-sans-serif ($primary-font) {
     font-family: $primary-font, helvetica, arial, verdana, sans-serif;
 }
+
+// Media Queries
+
+@mixin breakpoint($point) {
+  @if $point == largest {
+    @media (min-width: 1600px) { @content; }
+  }
+  @else if $point == large {
+    @media (max-width: 1200px) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 800px) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: 200px) { @content; }
+  }
+}
