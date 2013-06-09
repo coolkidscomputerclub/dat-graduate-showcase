@@ -26,8 +26,10 @@ block content
                     .bio
                         p #{entry.student.bio}
                     .links
-                        a(href="#{entry.student.links.twitter}") website
-                        a(href="#{entry.student.links.twitter}") twitter
+                        if entry.student.links.website
+                            a(href="#{entry.student.links.website}") website
+                        if entry.student.links.twitter
+                            a(href="#{entry.student.links.twitter}") twitter
 
 
 

@@ -1,18 +1,26 @@
 requirejs.config({
     paths: {
         jquery: "components/jquery/jquery",
+        ga: "//www.google-analytics.com/analytics"
+    },
+    shim: {
+        ga: {
+            exports: "ga"
+        }
     }
 });
 
-requirejs(["jquery", "modules/example", "modules/retinafy", "utilities/log"], function ($, example, retinafy) {
+requirejs(["jquery", "modules/sequence", "modules/retinafy", "modules/analytics", "utilities/log"], function ($, sequence, retinafy, analytics) {
 
     var app = {
 
         Modules: {
 
-            example: example,
+            sequence: sequence,
 
-            retinafy: retinafy
+            retinafy: retinafy,
+
+            analytics: analytics
 
         },
 

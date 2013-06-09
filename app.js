@@ -6,11 +6,15 @@ global.debugMode = true;
 
 var express = require("express"),
     routes = require("./routes"),
+    database = require("./modules/database"),
     http = require("http"),
-    path = require("path"),
-    database = require("./modules/database");
+    path = require("path");
 
-database.connect();
+database.connect().then(function (name) {
+
+    console.log("Database connected: ", name);
+
+});
 
 /**
  * App

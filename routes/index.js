@@ -20,8 +20,6 @@ var routes = {
 
         app.get("/projects/:slug?", applicationController.project);
 
-        app.get("/students/:slug?", applicationController.student);
-
         // CMS posts
 
         app.post("/entries/add", applicationController.add);

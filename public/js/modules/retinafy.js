@@ -2,9 +2,11 @@ define(["jquery", "plugins/jquery.retinafy"], function ($) {
 
     var retinafy = {
 
+        $el: $("body"),
+
         init: function () {
 
-            $("body").retinafy();
+            this.$el.retinafy();
 
         }
 
