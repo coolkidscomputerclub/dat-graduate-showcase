@@ -7,17 +7,16 @@ html(lang="en", class="no-js")
             title= title
         meta(name="description", content="Digital Art & Technology 2013 Graduate Showcase.")
         link(rel="stylesheet", href="/css/main.css")
-        // Replace with production version
-        script(src="js/components/modernizr/modernizr.js")
         script(src="//use.typekit.net/eod3fja.js")
         script
-            try { Typekit.load(); }
-            catch(e) {}
+            try { Typekit.load(); } catch (e) {}
+        // Replace with production version
+        script(src="/js/components/modernizr/modernizr.js")
     body
         include includes/header
         block content
         include includes/footer
-        script
+        script.
             var config = {
                 debug: #{debugMode}
             };
