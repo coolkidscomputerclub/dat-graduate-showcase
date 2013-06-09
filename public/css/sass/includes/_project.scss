@@ -96,64 +96,47 @@ $single-project-width: 700px;
 
         .student-image {
             float: left;
-            width: 100px;
-            height: 100px;
-            overflow: hidden;
+            margin: 0 50px 0 0;
         }
 
         .student-details {
+            float: left;
+            width: 500px;
+            font-family: "ff-tisa-web-pro";
 
             .whois {
-                width: 300px;
-                float: left;
-                padding: 0 15px;
 
                 .student-name {
-                    @include font-size(14);
-                    margin: 0 0 10px 0;
-                    font-family: "ff-tisa-web-pro";
-                    letter-spacing: 2px;
-                    font-weight: 400;
+                    margin: 0 0 7px 0;
+                    @include font-size(18);
                     text-transform: uppercase;
+                    line-height: 12px;
+                    font-weight: 400;
+                    letter-spacing: 2px;
                 }
 
                 .pathway {
-                    @include font-size(12);
-                    font-family: "ff-tisa-web-pro";
-                    font-weight: 400;
-                    line-height: 0.7em;
-                    color: darken($grey-light, 20%);
-                    margin: 0 0 20px 0;
-                }
-
-                .links {
-                    list-style-type: none;
-                    font-family: "ff-tisa-web-pro";
                     margin: 0;
-                    padding: 0;
-
-                    .student-link {
-                        color: $gold;
-                    }
-
+                    font-style: italic;
+                    color: #A9A9A9;
                 }
 
             }
 
             .bio {
-                width: 300px;
-                height: 100px;
-                float: right;
-
-                p {
-                    margin: 0;
-                    padding: 0 15px;
-                    font-family: "ff-tisa-web-pro";
-                    font-weight: 400;
-                }
 
             }
 
+            .links {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    display: inline-block;
+                    margin: 0 20px 0 0;
+                }
+            }
         }
 
     }

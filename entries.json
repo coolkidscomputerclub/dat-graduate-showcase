@@ -83,5 +83,46 @@
                 "website": "http://phil-rose.co.uk/vulpt"
             }
         }
+    },
+    {
+        "student": {
+            "name": "Florian Brueckner",
+            "pathway": "Game Design",
+            "bio": "A guy that is cool.",
+            "links": {
+                "twitter": "https://twitter.com/bloomingbridges",
+                "website": "http://bloomingbridges.co.uk/"
+            }
+        },
+        "project": {
+            "title": "In_Cubus",
+            "description": "A description for In_Cubus.",
+            "tags": ["tag", "another tag"],
+            "images": 2,
+            "vimeoURL": "https://vimeo.com/67979708",
+            "links": {
+                "website": "http://apps.facebook.com/in_cubus"
+            }
+        }
+    },
+    {
+        "student": {
+            "name": "James King",
+            "pathway": "Game Design",
+            "bio": "A guy that is cool.",
+            "links": {
+                "twitter": "https://twitter.com/sorakasumi",
+                "website": "http://lostwith.me/"
+            }
+        },
+        "project": {
+            "title": "Squish the Crab",
+            "description": "A description for Squish the Crab.",
+            "tags": ["tag", "another tag"],
+            "images": 2,
+            "vimeoURL": "https://vimeo.com/67979674",
+            "links": {
+            }
+        }
     }]
 }

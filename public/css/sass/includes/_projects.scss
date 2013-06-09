@@ -36,8 +36,8 @@
         width: 290px;
         height: 290px;
         overflow: hidden;
-        background: $white;
-        border: 15px solid $black;
+        background: $gold;
+        border: 15px solid $grey-dark;
 
         &:hover {
             border: 15px solid $gold;
@@ -45,6 +45,8 @@
 
         img {
             width: 100%;
+            opacity: 1;
+            -webkit-filter: grayscale(75%);
         }
 
         .sequence {
@@ -68,7 +70,8 @@
             @include font-size(20);
             display: inline-block;
             padding: 0 0 10px 0;
-            border-bottom: 1px solid $black;
+            color: $grey-dark;
+            border-bottom: 1px solid $grey-dark;
             text-transform: uppercase;
             font-family: "orator-std";
             font-weight: 400;
