@@ -73,13 +73,10 @@ body {
     @extend %container;
 }
 
-.projects {
-    .project {
-        display: inline-block;
-        width: 25%;
-        background: $primary;
-    }
-}
+/* # Projects
+================================================== */
+
+@import "includes/projects";
 
 /* # Footer
 ================================================== */

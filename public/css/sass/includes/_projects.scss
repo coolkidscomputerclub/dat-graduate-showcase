@@ -1,0 +1,62 @@
+// Single project
+
+.project {
+    display: inline-block;
+    width: calc(25% - 30px);
+    margin: 0 30px 30px 0;
+    overflow: hidden;
+    background: $background;
+
+    &:nth-of-type(4) {
+        width: calc(25% - 30px);
+        margin: 0 0 30px 0;
+    }
+
+    .project-image {
+        background: #CDCDCD;
+        border: 15px solid $white;
+        margin: 0 0 1px 0;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    .project-details {
+        padding: 25px;
+        background: $white;
+        text-align: center;
+
+        .project-title {
+            @include font-size(20);
+            display: inline-block;
+            padding: 0 0 10px 0;
+            border-bottom: 1px solid $black;
+            text-transform: uppercase;
+            font-family: "orator-std";
+            font-weight: 400;
+            margin: 0.5em 0 0.9em 0;
+        }
+
+        .student {
+            @include font-size(12);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-family: "minion-pro";
+            font-weight: 400;
+            line-height: 0.7em;
+            color: #999999;
+            margin: 0 0 30px 0;
+        }
+
+        .description {
+            font-family: "minion-pro";
+            color: #666666;
+            text-align: left;
+        }
+
+    }
+
+
+}

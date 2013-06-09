@@ -1,4 +1,12 @@
 .site-header {
     @extend %container;
-    background: $secondary;
+    margin: 0 auto 80px auto;
+
+    h1 {
+        @include font-size(32);
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "orator-std";
+        font-weight: 400;
+    }
 }

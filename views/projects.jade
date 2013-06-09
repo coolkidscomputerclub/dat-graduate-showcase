@@ -1,5 +1,38 @@
 extends layout
 
 block content
-    h1 #{title}
-    p Welcome to #{title}
+    main(class="main", id="main", role="main")
+        //h2= title
+
+        section.projects
+            article.project
+                .project-image
+                    img(src="http://placehold.it/300&text=project+thumbnail")
+                .project-details
+                    h3.project-title Command Control
+                    p.student Sam Billingham
+                    p.description Art party McSweeney's pour-over consequat, you probably haven't heard of them gastropub cred sunt authentic.
+
+            article.project
+                .project-image
+                    img(src="http://placehold.it/300&text=project+thumbnail")
+                .project-details
+                    h3.project-title Message Box
+                    p.student Saul Hardman
+                    p.description Art party McSweeney's pour-over consequat, you probably haven't heard of them gastropub cred sunt authentic.
+
+            article.project
+                .project-image
+                    img(src="http://placehold.it/300&text=project+thumbnail")
+                .project-details
+                    h3.project-title Pique
+                    p.student Ben Ashman
+                    p.description Art party McSweeney's pour-over consequat, you probably haven't heard of them gastropub cred sunt authentic.
+
+            article.project
+                .project-image
+                    img(src="http://placehold.it/300&text=project+thumbnail")
+                .project-details
+                    h3.project-title Squish the Crab
+                    p.student James King
+                    p.description Art party McSweeney's pour-over consequat, you probably haven't heard of them gastropub cred sunt authentic.
