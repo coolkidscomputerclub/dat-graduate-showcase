@@ -9,16 +9,16 @@
 
 .project {
     display: inline-block;
-    width: 290px;
-    margin: 0 45px 45px 0;
+    width: 230px;
+    margin: 0 30px 30px 0;
     //background: $background;
-    &:nth-child(3n) {
-        margin: 0;
+    &:nth-child(4n) {
+        margin-right: 0;
     }
 
     // 3-column
     @include breakpoint(large) {
-        &:nth-child(3n) { margin: 0; }
+        &:nth-child(4n) { margin: 0; }
     }
 
     // 2-column
@@ -33,28 +33,25 @@
 
     .project-image {
         position: relative;
-        width: 290px;
-        height: 290px;
+        padding: 14px;
+        width: 230px;
+        height: 230px;
         overflow: hidden;
-        background: $gold;
-        border: 15px solid $grey-dark;
-
-        &:hover {
-            border: 15px solid $gold;
-        }
+        background: $white;
+        border: 1px solid $black;
 
         img {
-            width: 100%;
-            opacity: 1;
             -webkit-filter: grayscale(75%);
+        }
+
+        &:hover {
+            border-color: $gold;
         }
 
         .sequence {
             position: absolute;
-            left: 290px;
-            top: 0;
-            width: 2900px;
-            height: 290px;
+            left: 230px;
+            top: 14px;
         }
 
     }
@@ -73,7 +70,7 @@
             color: $grey-dark;
             border-bottom: 1px solid $grey-dark;
             text-transform: uppercase;
-            font-family: "orator-std";
+            font-family: $orator;
             font-weight: 400;
             margin: 0;
         }
@@ -82,7 +79,7 @@
             @include font-size(10);
             text-transform: uppercase;
             letter-spacing: 5px;
-            font-family: "ff-tisa-web-pro";
+            font-family: $tisa;
             font-weight: 400;
             //line-height: 0.7em;
             color: $gold;

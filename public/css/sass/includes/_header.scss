@@ -4,16 +4,55 @@
 
     .header-inner {
         @extend %container;
-        padding: 20px 0;
     }
 
-    h1 {
+    .banner {
         @include font-size(32);
-        margin: 0;
-        text-align: center;
+        margin: 60px 0 60px -20px;
         text-transform: uppercase;
-        font-family: "orator-std";
+        font-family: $orator;
         font-weight: 400;
-        color: $gold;
+        @include font-size(24);
+        @include line-height(24);
+        a {
+            color: $black;
+            &:hover .dat {
+                background-color: $gold;
+            }
+        }
+    }
+
+    .nav {
+        float: right;
+        @include font-size(16);
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        a {
+            margin: 0 0 0 20px;
+            padding: 0 0 2px;
+            color: $black;
+            border-bottom: 2px solid $black;
+            &:hover {
+                border-color: $gold;
+            }
+        }
+    }
+
+    .dat {
+        margin: 0 15px 0 0;
+        padding: 10px 20px 12px;
+        color: $white;
+        background: $black;
+    }
+
+    .description {
+        margin: 0;
+        width: 720px;
+        color: $grey-text;
+        @include font-size(18);
+        font-weight: 400;
     }
 }

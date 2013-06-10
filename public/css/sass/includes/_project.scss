@@ -33,7 +33,7 @@ $single-project-width: 700px;
             padding: 0 0 10px 0;
             border-bottom: 1px solid $black;
             text-transform: uppercase;
-            font-family: "orator-std";
+            font-family: $orator;
             font-weight: 400;
             margin: 0.5em 0 0.9em 0;
             color: $black;
@@ -43,7 +43,7 @@ $single-project-width: 700px;
             @include font-size(12);
             text-transform: uppercase;
             letter-spacing: 5px;
-            font-family: "ff-tisa-web-pro";
+            font-family: $tisa;
             font-weight: 400;
             line-height: 0.7em;
             color: $gold;
@@ -58,7 +58,7 @@ $single-project-width: 700px;
 
         p {
             @include font-size(18);
-            font-family: "ff-tisa-web-pro";
+            font-family: $tisa;
             font-weight: 400;
             line-height: 1.6em;
         }
@@ -71,7 +71,7 @@ $single-project-width: 700px;
 
         .tag {
             @include font-size(11);
-            font-family: "ff-tisa-web-pro";
+            font-family: $tisa;
             font-style: italic;
             text-transform: lowercase;
             letter-spacing: 1px;
