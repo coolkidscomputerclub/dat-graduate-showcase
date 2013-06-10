@@ -18,6 +18,7 @@ var entryController = {
             res.render("projects", {
                 debugMode: debugMode,
                 title: "Projects",
+                view: "page-projects",
                 entries: entries
             });
 
@@ -32,6 +33,7 @@ var entryController = {
             res.render("students", {
                 debugMode: debugMode,
                 title: "Students",
+                view: "page-students",
                 entries: entries
             });
 
@@ -57,6 +59,7 @@ var entryController = {
                 res.render("project", {
                     debugMode: debugMode,
                     title: "Project",
+                    view: "page-project",
                     entry: entry
                 });
 

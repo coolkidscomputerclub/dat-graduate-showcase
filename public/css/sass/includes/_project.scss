@@ -1,6 +1,10 @@
 .project-header {
     text-align: center;
     margin: 0 0 30px 0;
+
+    .description {
+        display: none;
+    }
 }
 
 .featured-image {

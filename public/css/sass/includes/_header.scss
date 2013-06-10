@@ -8,21 +8,29 @@
 
     .banner {
         @include font-size(32);
+        @include font-size(24);
+        @include line-height(24);
         margin: 60px 0 60px -20px;
+        transition: margin 0.5s ease;
         text-transform: uppercase;
         font-family: $orator;
         font-weight: 400;
-        @include font-size(24);
-        @include line-height(24);
+        &:hover {
+            margin: 60px 0;
+            transition: margin 0.5s ease;
+        }
+
         a {
             color: $black;
             &:hover .dat {
                 background-color: $gold;
+
             }
         }
     }
 
     .nav {
+        margin: -5px 0 0 0;
         float: right;
         @include font-size(16);
         ul {
@@ -54,5 +62,11 @@
         color: $grey-text;
         @include font-size(18);
         font-weight: 400;
+    }
+}
+
+.page-project {
+    .description {
+        display: none;
     }
 }
