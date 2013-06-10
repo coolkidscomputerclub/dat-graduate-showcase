@@ -10,7 +10,7 @@ $dark-gray: #a5a5a5;
 $highlight: rgb(0, 193, 156);
 $font-size: 14;
 $text-highlight-color: #b3d4fc;
-$site-width: 1290px;
+$site-width: 1040px;
 
 %container {
     width: $site-width;
@@ -54,14 +54,14 @@ body {
     text-shadow: none;
 }
 
-.cf:before,
-.cf:after {
+%cf:before,
+%cf:after {
     content: " ";
     display: table;
 }
 
-.cf:after { clear: both; }
-.cf { *zoom: 1; }
+%cf:after { clear: both; }
+%cf { *zoom: 1; }
 
 /* Author: Saul Hardman (@saulhardman) */
 
@@ -76,6 +76,16 @@ html {
 body {
     position: relative;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    //border-bottom: 1px solid $red;
+    color: $red;
+    &:visited   { color: $red; }
+    &:hover     { color: lighten($red, 20%); }
+    &:active    { color: $red; }
+
 }
 
 

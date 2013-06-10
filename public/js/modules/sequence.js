@@ -14,7 +14,9 @@ define(["jquery"], function ($) {
 
         frames: 10,
 
-        frameWidth: 290,
+        frameWidth: 230,
+
+        padding: 15,
 
         init: function (Events) {
 
@@ -69,7 +71,7 @@ define(["jquery"], function ($) {
             var self = this,
                 pos;
 
-            pos = (this.frame - 1) * -this.frameWidth;
+            pos = ((this.frame - 1) * -this.frameWidth) + (this.padding * this.frame) - 1;
 
             $el.css({
                 "left": pos + "px"
