@@ -2,7 +2,7 @@
 
 .projects {
     @extend %container;
-    margin: 60px auto 0 auto
+    margin: 60px auto 0;
 }
 
 // Single project
@@ -59,7 +59,7 @@
     .project-details {
         position: relative;
         z-index: 100;
-        padding: 35px 25px;
+        padding: 35px 15px;
         text-align: center;
         background: $white;
 

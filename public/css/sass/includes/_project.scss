@@ -58,7 +58,7 @@ $single-project-width: 700px;
 
     .project-description {
         width: $single-project-width;
-        margin: 0 auto 60px auto;
+        margin: 0 auto 60px;
 
         p {
             @include font-size(18);
@@ -71,19 +71,19 @@ $single-project-width: 700px;
 
     .tags {
         width: $single-project-width;
-        margin: 0 auto 60px auto;
+        margin: 0 auto 60px;
 
         .tag {
-            @include font-size(11);
+            @include font-size(12);
             font-family: $tisa;
-            font-style: italic;
-            text-transform: lowercase;
-            letter-spacing: 1px;
-            display: inline-block;
-            background: $gold;
-            color: $white;
-            padding: 2px 10px 5px 10px;
-            margin: 0 15px 5px 0;
+            color: $gold;
+            // text-transform: lowercase;
+            // letter-spacing: 1px;
+            // display: inline-block;
+            // background: $gold;
+            // color: $white;
+            // padding: 2px 10px 5px 10px;
+            // margin: 0 15px 5px 0;
         }
     }
 }
@@ -100,7 +100,7 @@ $single-project-width: 700px;
 
         .student-image {
             float: left;
-            margin: 0 50px 0 0;
+            margin: 0 30px 0 0;
         }
 
         .student-details {
@@ -111,7 +111,7 @@ $single-project-width: 700px;
             .whois {
 
                 .student-name {
-                    margin: 0 0 7px 0;
+                    margin: 0 0 20px 0;
                     @include font-size(18);
                     text-transform: uppercase;
                     line-height: 12px;
@@ -122,7 +122,7 @@ $single-project-width: 700px;
                 .pathway {
                     margin: 0;
                     font-style: italic;
-                    color: #A9A9A9;
+                    color: $gold;
                 }
 
             }

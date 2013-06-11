@@ -79,13 +79,16 @@ body {
 }
 
 a {
+    color: $black;
+    @include line-height(12);
     text-decoration: none;
-    //border-bottom: 1px solid $red;
-    color: $red;
-    &:visited   { color: $red; }
-    &:hover     { color: lighten($red, 20%); }
-    &:active    { color: $red; }
-
+    border-bottom: 1px dotted $black;
+    &:hover {
+        border-bottom-style: solid;
+    }
+    &:visited {
+        color: $black;
+    }
 }
 
 

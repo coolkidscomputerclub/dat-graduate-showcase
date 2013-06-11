@@ -1,5 +1,6 @@
 .site-header {
     margin: 0 auto;
+    padding: 50px 0 0;
     background: $white;
 
     .header-inner {
@@ -7,24 +8,23 @@
     }
 
     .banner {
+        margin: 0;
+        padding: 0 0 50px;
+        font-family: $orator;
+        font-weight: 400;
         @include font-size(32);
         @include font-size(24);
         @include line-height(24);
-        margin: 60px 0 60px -20px;
-        transition: margin 0.5s ease;
         text-transform: uppercase;
-        font-family: $orator;
-        font-weight: 400;
-        &:hover {
-            margin: 60px 0;
-            transition: margin 0.5s ease;
-        }
 
         a {
             color: $black;
-            &:hover .dat {
-                background-color: $gold;
-
+            border: none;
+            &:hover {
+                border: none;
+                .dat {
+                    background-color: $gold;
+                }
             }
         }
     }
@@ -39,12 +39,11 @@
             list-style: none;
         }
         a {
-            margin: 0 0 0 20px;
-            padding: 0 0 2px;
+            margin: 0 8px 0 8px;
             color: $black;
-            border-bottom: 2px solid $black;
-            &:hover {
-                border-color: $gold;
+            @include font-size(14);
+            &:last-of-type {
+                margin-right: 0;
             }
         }
     }
@@ -57,10 +56,10 @@
     }
 
     .description {
-        margin: 0;
-        width: 720px;
-        color: $grey-text;
-        @include font-size(18);
+        margin: 0 0 0 260px;
+        padding: 0;
+        width: 520px;
+        @include font-size(16);
         font-weight: 400;
     }
 }

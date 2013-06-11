@@ -14,8 +14,13 @@ block content
                 p Based on user input and google latitude data Message Box diverts incoming calls, prompting the caller to leave a message if the recipient is busy, or connecting the call if the user is either available or not in the vicinity the box.
                 p Message Box is heavily inspired by Durrell Bishop’s Marble Answer Machine.
             section.tags
-                each tag in entry.project.tags
-                    p.tag #{tag}
+                p Tags: 
+                    each tag, i in entry.project.tags
+                        span.tag #{tag}
+                        if i != entry.project.tags.length - 1
+                            | , 
+                        else
+                            | .
         section.about-student
             .about-student-inner
                 .student-image
