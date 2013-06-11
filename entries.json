@@ -265,7 +265,7 @@
         },
         "project": {
             "title": "Zoe and Dian",
-            "description": "Looks at the technology of moving images, starting with the Zoetrope, and in the future there will be the Dianrang. By researching into the past and comparing it to the present this project aims to show where the technology will advance to in the future. This project also looks at what was and what is entertaining, and predicts what will be the future…",
+            "description": "<p>Looks at the technology of moving images, starting with the Zoetrope, and in the future there will be the Dianrang.</p> <p>By researching into the past and comparing it to the present this project aims to show where the technology will advance to in the future.</p> <p>This project also looks at what was and what is entertaining, and predicts what will be the future…</p>",
             "tags": ["tag"],
             "images": 2,
             "vimeoID": "67959834",
@@ -286,7 +286,7 @@
         },
         "project": {
             "title": "Suspense",
-            "description": " Suspense is an instant bullet-time 360 rig designed to take the concept of bullet-time outside the studio and available for public usage at an exhibition.",
+            "description": "<p>Suspense is an instant bullet-time 360 rig designed to take the concept of bullet-time outside the studio and available for public usage at an exhibition.</p>",
             "tags": ["tag"],
             "images": 2,
             "vimeoID": "67959729",
@@ -307,7 +307,7 @@
         },
         "project": {
             "title": "Gargantuan",
-            "description": "Gargantuan is a stop motion animated short video made with LEGO about an astronaut who is about to go into space on an (unspecified) mission. The project also includes a 15 minute behind the scenes video covering methods I used throughout production and problems with solutions that occurred. This covers from filming through to editing with Premiere Pro and After Effects CS6.",
+            "description": "<p>Gargantuan is a stop motion animated short video made with LEGO about an astronaut who is about to go into space on an (unspecified) mission.</p>",
             "tags": ["tag"],
             "images": 2,
             "vimeoID": "67961116",
@@ -349,7 +349,7 @@
         },
         "project": {
             "title": "Squish the Crab",
-            "description": "A description for Squish the Crab.",
+            "description": "<p>A wacky micro-game collection for tablets. Play it now, or don't, it's your choice.</p>",
             "tags": ["tag", "another tag"],
             "images": 2,
             "vimeoID": "67979674",
