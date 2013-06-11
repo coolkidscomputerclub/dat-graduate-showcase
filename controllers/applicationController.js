@@ -69,6 +69,16 @@ var entryController = {
 
     },
 
+    event: function (req, res) {
+
+        res.render("event", {
+            debugMode: debugMode,
+            title: "Event",
+            view: "page-event"
+        });
+
+    },
+
     add: function (req, res) {
 
         console.log("Add entries req: ", req.body.entries);
