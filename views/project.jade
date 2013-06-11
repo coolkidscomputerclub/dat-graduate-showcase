@@ -11,6 +11,7 @@ block content
                 h3.student #{entry.student.name}
             .project-description
                 !{entry.project.description}
+                iframe(class="trailer", src="http://player.vimeo.com/video/#{entry.project.vimeoID}?title=0&byline=0&portrait=0&color=bf9d3e", width="700", height="394", frameborder="0", webkitAllowFullScreen, mozallowfullscreen, allowFullScreen)
             section.tags
                 p Tags:
                     each tag, i in entry.project.tags
@@ -26,7 +27,7 @@ block content
                 .student-details
                     .whois
                         h2.student-name #{entry.student.name}
-                        p.pathway Digital Art &amp; Technology (#{entry.student.pathway})
+                        p.course #{entry.student.course}
                     .bio
                         p !{entry.student.bio}
                     ul.links
@@ -36,8 +37,3 @@ block content
                         if entry.student.links.twitter
                             li
                                 a.student-link(href="#{entry.student.links.twitter}") Twitter
-
-
-
-
-

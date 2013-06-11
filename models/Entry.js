@@ -12,7 +12,7 @@ var EntrySchema = mongoose.Schema({
     student: {
         slug: { type: String, required: true, unique: true },
         name: String,
-        pathway: String,
+        course: String,
         bio: String,
         profileImage: String,
         links: {
@@ -30,7 +30,7 @@ var EntrySchema = mongoose.Schema({
             featured: String,
             sequence: String
         },
-        vimeoURL: String,
+        vimeoID: Number,
         links: {
             website: String
         }

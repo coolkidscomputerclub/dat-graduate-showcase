@@ -69,6 +69,10 @@ $single-project-width: 700px;
 
     }
 
+    .trailer {
+        margin: 60px 0 0;
+    }
+
     .tags {
         width: $single-project-width;
         margin: 0 auto 60px;
@@ -119,7 +123,7 @@ $single-project-width: 700px;
                     letter-spacing: 2px;
                 }
 
-                .pathway {
+                .course {
                     margin: 0;
                     font-style: italic;
                     color: $gold;
