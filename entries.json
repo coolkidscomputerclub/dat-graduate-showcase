@@ -1,10 +1,11 @@
 {
     "apiKey": "IrBigd4b1K",
-    "entries": [{
+    "entries": [
+    {
         "student": {
             "name": "Saul Hardman",
             "pathway": "Interaction Design",
-            "bio": "He's a cool guy",
+            "bio": "bio",
             "links": {
                 "twitter": "http://twitter.com/saulhardman",
                 "website": "http://iamsaul.co.uk"
@@ -12,7 +13,7 @@
         },
         "project": {
             "title": "Message Box",
-            "description": "It's a box, yo.",
+            "description": "<p>Message Box is a context-aware, tangible and digital interface for mobile voicemail.</p> <p>Incoming messages are instantiated as wooden marbles which can be used to playback their corresponding audio files. A web-based interface provides more fine-grained interaction opportunities.</p> <p>Based on user input and google latitude data; Message Box diverts incoming calls, prompting the caller to leave a message if the recipient is busy, or connecting the call if the user is either available or not in the vicinity the box.</p> <p>Message Box is heavily inspired by Durrell Bishop’s Marble Answer Machine.</p>",
             "tags": ["Object", "Physical"],
             "images": 4,
             "vimeoURL": "http://vimeo.com/67646753",
@@ -25,7 +26,7 @@
         "student": {
             "name": "Ben Ashman",
             "pathway": "Interaction Design",
-            "bio": "He's a cool guy too",
+            "bio": "bio",
             "links": {
                 "twitter": "http://twitter.com/benashman",
                 "website": "http://benashman.co.uk"
@@ -33,7 +34,7 @@
         },
         "project": {
             "title": "Pique",
-            "description": "Take a pique at my balls, yo.",
+            "description": "<p>Pique is an experimental photo-sharing app designed to explore how much we can learn about others through the medium of photography.</p> <p>Pique pairs you with another user at random (your Pique Pal) for 30 days, and ecourages you to share unique, intimate insights in to your everyday life.</p> <p>At the end of your time together, you will be asked to share some thoughts about your Pal, the life they lead, and the sort of person they appear to be… and they'll do the same.</p>",
             "tags": ["Mobile", "iOS", "RubyMotion", "Photo", "App"],
             "images": 2,
             "vimeoURL": "http://vimeo.com/67979764",
@@ -44,9 +45,177 @@
     },
     {
         "student": {
+            "name": "Chris Tough",
+            "pathway": "Interaction Design",
+            "bio": "bio",
+            "links": {
+                "twitter": "https://twitter.com/christough",
+                "website": "http://www.christophertough.co.uk/"
+            }
+        },
+        "project": {
+            "title": "Osciller",
+            "description": "<p>Osciller is an installation that augments the way you interact with live digital music.</p> <p>Osciller engages you, the live audience, further by capturing your dancing through a mobile application. With a colour of your choice, you create a visualisation through your movement.</p>",
+            "tags": ["tag"],
+            "images": 2,
+            "vimeoURL": "http://vimeo.com/67959830",
+            "links": {
+                "website": "http://www.christophertough.co.uk/osciller/"
+            }
+        }
+    },
+    {
+        "student": {
+            "name": "Dan Morris",
+            "pathway": "Information Design",
+            "bio": "bio",
+            "links": {
+                "twitter": "",
+                "website": ""
+            }
+        },
+        "project": {
+            "title": "Quake",
+            "description": "<p>Quake allows you to view music as sound waves interact with the natural material in place in a technological context creating shapes and patterns.</p> <p>The sound of your choice generates involuntary physical responses through seamless motion from liquid to sculpture.</p>",
+            "tags": ["tag"],
+            "images": 2,
+            "vimeoURL": "http://vimeo.com/67959831",
+            "links": {
+                "website": ""
+            }
+        }
+    },
+    {
+        "student": {
+            "name": "Dom Talbot",
+            "pathway": "Information Design",
+            "bio": "bio",
+            "links": {
+                "twitter": "https://twitter.com/Domjtalbot",
+                "website": "http://www.djtalbot.com/"
+            }
+        },
+        "project": {
+            "title": "EXP-duo",
+            "description": "<p>EXP-duo gives users a new experience within an architectural space by exposing alternate realities within the space. Whilst walking around the space users may come across negative or positive realities.</p> <p>Behind the exterior, EXPduo runs off a complex integration between Arduino, MQTT, Node.js, MAX 6 and Ableton Live.</p>",
+            "tags": ["tag"],
+            "images": 2,
+            "vimeoURL": "http://vimeo.com/67959236",
+            "links": {
+                "website": ""
+            }
+        }
+    },
+    {
+        "student": {
+            "name": "James Morgan",
+            "pathway": "Digital Media and Animation",
+            "bio": "bio",
+            "links": {
+                "twitter": "",
+                "website": ""
+            }
+        },
+        "project": {
+            "title": "Mirrored",
+            "description": "<p>Mirrored is an experimental video game set in the horror genre. The unique aspect is that the game photographs the player at predetermined \"scary\" moments.</p>",
+            "tags": ["tag"],
+            "images": 2,
+            "vimeoURL": "http://vimeo.com/67959234",
+            "links": {
+                "website": ""
+            }
+        }
+    },
+    {
+        "student": {
+            "name": "Jessi Dimmock",
+            "pathway": "Information Design",
+            "bio": "bio",
+            "links": {
+                "twitter": "",
+                "website": ""
+            }
+        },
+        "project": {
+            "title": "Visualitube",
+            "description": "<p>Visualitube is a physical visualisation of live data from the London Underground. It was created to demonstrate and expose the current problems with public transport in order to understand them better.</p> <p>It can run either on live data as it comes in, to be used as a kind of 'news reader', or cycle through the RSS feed from the present backwards.</p>",
+            "tags": ["tag"],
+            "images": 2,
+            "vimeoURL": "http://vimeo.com/67959785",
+            "links": {
+                "website": ""
+            }
+        }
+    },
+    {
+        "student": {
+            "name": "Jonathan Redwood",
+            "pathway": "Information Design",
+            "bio": "bio",
+            "links": {
+                "twitter": "https://twitter.com/JonathanRedwood",
+                "website": "http://jred.co.uk/"
+            }
+        },
+        "project": {
+            "title": "Canute",
+            "description": "<p>Canute is a machine for visualising the tide. It uses a set of pumps, valves and sensors to raise and lower the water levels in its three tubes. The tube on the left is one hour ago, on the right is one hour from now.</p> <p>Canute can be described as an actualisation as it uses the same physical material it is representing as a medium. The project is part of collection of experiments in the recreation and translation of patterns of physical material in remote locations.</p>",
+            "tags": ["tag"],
+            "images": 2,
+            "vimeoURL": "http://vimeo.com/67959725",
+            "links": {
+                "website": ""
+            }
+        }
+    },
+    {
+        "student": {
+            "name": "Joshua Silvester",
+            "pathway": "Digital Media and Animation",
+            "bio": "bio",
+            "links": {
+                "twitter": "",
+                "website": ""
+            }
+        },
+        "project": {
+            "title": "The Emotion…",
+            "description": "<p>Films use colour, shape and movement throughout film to emphasize the emotion of the scene. The Emotion Experiment explores how deeply our associations with colour, shape, movement and emotion go.</p> <p>By reducing a film scene down to its most basic shapes, colours and movements. this experiment will allow us to furhter understand how we percieve these emotional triggers and, furthermore, see which ones take the most priority.</p>",
+            "tags": ["tag"],
+            "images": 2,
+            "vimeoURL": "http://vimeo.com/67959238",
+            "links": {
+                "website": ""
+            }
+        }
+    },
+    {
+        "student": {
+            "name": "Lizzie Seymour",
+            "pathway": "Interaction Design",
+            "bio": "bio",
+            "links": {
+                "twitter": "https://twitter.com/imaginehonesty",
+                "website": "http://lizz.es/"
+            }
+        },
+        "project": {
+            "title": "Mockingbird",
+            "description": "<p>Most technology designed for the autistic community aims to change them to fit our world views. Mockingbird does the opposite.</p> <p>It aims to create empathy for the confusing and beautiful ways adults with autism see the world by creating a real-time experience of their symptoms in their own words, to let you see things from their point of view.</p> <p>Mockingbird - Read someone else's story.</p>",
+            "tags": ["tag"],
+            "images": 2,
+            "vimeoURL": "http://vimeo.com/67959238",
+            "links": {
+                "website": ""
+            }
+        }
+    },
+    {
+        "student": {
             "name": "Sam Billingham",
             "pathway": "Interaction Design",
-            "bio": "He's a coolest guy.",
+            "bio": "bio",
             "links": {
                 "twitter": "http://twitter.com/sambillingham",
                 "website": "http://sambillingham.com/"
@@ -54,7 +223,7 @@
         },
         "project": {
             "title": "Command Control",
-            "description": "Wiggle the ectosphere!",
+            "description": "<p>Command Control is a 3 player game, each player controls an area of a spaceship and must relay instructions to other players while simultaneously acting on instructions they receive.</p> <p>Players interact using a physical controller with buttons, switches, potentiometers and a screen to see a visual representation of their controllers.</p> <p>Instructions are displayed with a time limit as players work their way through diffrent zones. Pressing the wrong buttons or runing out of time will damage the ship until it's eventual destruction.</p>",
             "tags": ["Game", "Arduino", "MQTT", "Physical", "Websockets", "Socket.io", "Node.js"],
             "images": 2,
             "vimeoURL": "https://vimeo.com/67979772",
@@ -67,7 +236,7 @@
         "student": {
             "name": "Phil Rose",
             "pathway": "Interaction Design",
-            "bio": "A guy that is cool.",
+            "bio": "bio",
             "links": {
                 "twitter": "https://twitter.com/PRtheRose",
                 "website": "http://phil-rose.co.uk/"
@@ -75,12 +244,75 @@
         },
         "project": {
             "title": "Vulpt",
-            "description": "A description for Vulpt.",
+            "description": "<p>Vulpt is a gestural 3D modeling tool built using OpenNI, Processing, Node.js, Socket.io, and Three.js.</p> <p>Vulpt demonstrates how the user can now be in the web page, able to control things within a virtual environment based on gestures.</p> <p>Vulpt aims to move away from more traditional human-computer interaction set-ups in order to create a more intuitive web experience.</p>",
             "tags": ["OpenNI", "Processing", "Node.js", "Socket.io", "Three.js"],
             "images": 2,
             "vimeoURL": "https://vimeo.com/67658297",
             "links": {
                 "website": "http://phil-rose.co.uk/vulpt"
+            }
+        }
+    },
+    {
+        "student": {
+            "name": "Rachel Dalton",
+            "pathway": "Information Design",
+            "bio": "bio",
+            "links": {
+                "twitter": "https://twitter.com/rdalton123",
+                "website": "http://www.rdalton.co.uk/"
+            }
+        },
+        "project": {
+            "title": "Zoe and Dian",
+            "description": "Looks at the technology of moving images, starting with the Zoetrope, and in the future there will be the Dianrang. By researching into the past and comparing it to the present this project aims to show where the technology will advance to in the future. This project also looks at what was and what is entertaining, and predicts what will be the future…",
+            "tags": ["tag"],
+            "images": 2,
+            "vimeoURL": "http://vimeo.com/67959834",
+            "links": {
+                "website": "http://rdalton.co.uk/zoeanddian.html"
+            }
+        }
+    },
+    {
+        "student": {
+            "name": "Simon Batty",
+            "pathway": "Information Design",
+            "bio": "bio",
+            "links": {
+                "twitter": "https://twitter.com/psysize",
+                "website": "http://psymon.co.uk/"
+            }
+        },
+        "project": {
+            "title": "Suspense",
+            "description": " Suspense is an instant bullet-time 360 rig designed to take the concept of bullet-time outside the studio and available for public usage at an exhibition.",
+            "tags": ["tag"],
+            "images": 2,
+            "vimeoURL": "http://vimeo.com/67959729",
+            "links": {
+                "website": "http://insuspense.me"
+            }
+        }
+    },
+    {
+        "student": {
+            "name": "David Goodwin",
+            "pathway": "Digital Media and Animation",
+            "bio": "bio",
+            "links": {
+                "twitter": "",
+                "website": "http://www.tardiskeeper.com/2/"
+            }
+        },
+        "project": {
+            "title": "Gargantuan",
+            "description": "Gargantuan is a stop motion animated short video made with LEGO about an astronaut who is about to go into space on an (unspecified) mission. The project also includes a 15 minute behind the scenes video covering methods I used throughout production and problems with solutions that occurred. This covers from filming through to editing with Premiere Pro and After Effects CS6.",
+            "tags": ["tag"],
+            "images": 2,
+            "vimeoURL": "http://vimeo.com/67961116",
+            "links": {
+                "website": "http://www.tardiskeeper.com/gargantuan/"
             }
         }
     },
@@ -95,8 +327,8 @@
             }
         },
         "project": {
-            "title": "In_Cubus",
-            "description": "A description for In_Cubus.",
+            "title": "IN//CUBUS",
+            "description": "<p>IN//CUBUS is a social experiment with the aim to foster collaboration between strangers in a physical space and to combat the dwindling attention span of long-time internet users.</p>",
             "tags": ["tag", "another tag"],
             "images": 2,
             "vimeoURL": "https://vimeo.com/67979708",

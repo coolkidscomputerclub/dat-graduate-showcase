@@ -10,15 +10,13 @@ block content
                 h2.project-title #{entry.project.title}
                 h3.student #{entry.student.name}
             .project-description
-                p Message Box is a context-aware, tangible and digital interface for mobile voicemail. It instantiates incoming messages as physical marbles which can be used to playback their corresponging audio files. A web-based interface provides more fine-grained interaction opportunities.
-                p Based on user input and google latitude data Message Box diverts incoming calls, prompting the caller to leave a message if the recipient is busy, or connecting the call if the user is either available or not in the vicinity the box.
-                p Message Box is heavily inspired by Durrell Bishop’s Marble Answer Machine.
+                !{entry.project.description}
             section.tags
-                p Tags: 
+                p Tags:
                     each tag, i in entry.project.tags
                         span.tag #{tag}
                         if i != entry.project.tags.length - 1
-                            | , 
+                            | ,
                         else
                             | .
         section.about-student
@@ -30,7 +28,7 @@ block content
                         h2.student-name #{entry.student.name}
                         p.pathway Digital Art &amp; Technology (#{entry.student.pathway})
                     .bio
-                        p Irony four loko umami, Echo Park hoodie cardigan PBR Vice tofu pork belly tattooed aesthetic. Actually leggings asymmetrical Etsy lo-fi sartorial.
+                        p !{entry.student.bio}
                     ul.links
                         if entry.student.links.website
                             li
