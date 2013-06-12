@@ -12,7 +12,7 @@ define(["jquery"], function ($) {
 
         frame: 1,
 
-        frames: 10,
+        frames: 15,
 
         frameWidth: 230,
 
