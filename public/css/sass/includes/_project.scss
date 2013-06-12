@@ -43,7 +43,7 @@ $single-project-width: 700px;
             color: $black;
         }
 
-        .student {
+        .student-name {
             @include font-size(12);
             text-transform: uppercase;
             letter-spacing: 5px;
