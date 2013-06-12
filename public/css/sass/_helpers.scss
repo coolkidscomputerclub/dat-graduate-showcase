@@ -75,13 +75,13 @@
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
+%clearfix:before,
+%clearfix:after {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
 
-.clearfix:after {
+%clearfix:after {
     clear: both;
 }
 
@@ -90,6 +90,6 @@
  * Include this rule to trigger hasLayout and contain floats.
  */
 
-.clearfix {
+%clearfix {
     *zoom: 1;
 }

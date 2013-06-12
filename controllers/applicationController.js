@@ -17,6 +17,7 @@ var entryController = {
 
             res.render("projects", {
                 debugMode: debugMode,
+                year: (new Date()).getUTCFullYear(),
                 title: "Projects",
                 view: "page-projects",
                 entries: entries
@@ -32,6 +33,7 @@ var entryController = {
 
             res.render("students", {
                 debugMode: debugMode,
+                year: (new Date()).getUTCFullYear(),
                 title: "Students",
                 view: "page-students",
                 entries: entries
@@ -58,6 +60,7 @@ var entryController = {
 
                 res.render("project", {
                     debugMode: debugMode,
+                    year: (new Date()).getUTCFullYear(),
                     title: "Project",
                     view: "page-project",
                     entry: entry
@@ -73,6 +76,7 @@ var entryController = {
 
         res.render("event", {
             debugMode: debugMode,
+            year: (new Date()).getUTCFullYear(),
             title: "Event",
             view: "page-event"
         });
