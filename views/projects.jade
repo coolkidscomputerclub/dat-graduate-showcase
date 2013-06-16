@@ -7,13 +7,15 @@ block content
         // entries object contains multiple { student: {}, project: {} } objects
 
         section.projects
-            each entry in entries
-                article.project
-                    .project-image
-                        a(href="projects/#{entry.project.slug}")
-                            img(src="/img/message-box-gallery.jpg")
-                            img.sequence(src="/img/saul-hardman-sequence.jpg", data-frames="", width="3225", height="200")
-                    .project-details
-                        h3.project-title #{entry.project.title}
-                        p.student #{entry.student.name}
-                        //p.description #{entry.project.description}
+            .projects-inner
+                each entry in entries
+                    article.project
+                        .project-image
+                            a(href="projects/#{entry.project.slug}")
+                                img(src="/img/message-box-gallery.jpg")
+                                img.sequence(src="/img/saul-hardman-sequence.jpg", data-frames="", width="3225", height="200")
+                        .project-details
+                            h3.project-title #{entry.project.title}
+                            p.student #{entry.student.name}
+                            //p.description #{entry.project.description}
+

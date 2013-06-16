@@ -1,4 +1,16 @@
 .site-footer {
-    @extend %container;
+    padding: 60px 0;
     border-top: 1px solid $grey-light;
+
+    .footer-inner {
+        @extend %container;
+        text-align: center;
+
+        .course-details {
+            //float: right;
+            margin: -5px 0 0 0;
+        }
+
+    }
+
 }

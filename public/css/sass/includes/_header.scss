@@ -56,10 +56,11 @@
     }
 
     .description {
-        margin: 0 0 0 260px;
+        margin: 30px auto 0 auto;
         padding: 0;
-        width: 520px;
-        @include font-size(16);
+        width: 75%;
+        text-align: center;
+        @include font-size(20);
         font-weight: 400;
     }
 }

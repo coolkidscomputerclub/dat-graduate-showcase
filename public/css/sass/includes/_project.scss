@@ -43,7 +43,7 @@ $single-project-width: 700px;
             color: $black;
         }
 
-        .student {
+        .student-name {
             @include font-size(12);
             text-transform: uppercase;
             letter-spacing: 5px;
@@ -79,13 +79,16 @@ $single-project-width: 700px;
     }
 
     .tags {
+        @include font-size(18);
         width: $single-project-width;
         margin: 0 auto 60px;
+        font-style: italic;
 
         .tag {
-            @include font-size(12);
+            @include font-size(18);
             font-family: $tisa;
             color: $gold;
+            font-style: italic;
             // text-transform: lowercase;
             // letter-spacing: 1px;
             // display: inline-block;

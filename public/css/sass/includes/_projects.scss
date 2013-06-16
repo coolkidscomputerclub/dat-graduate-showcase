@@ -1,8 +1,14 @@
 // Projects gallery
 
 .projects {
-    @extend %container;
     margin: 60px auto 0;
+    border-top: 1px solid $grey-light;
+
+    .projects-inner {
+        @extend %container;
+        padding: 60px 0 0 0;
+    }
+
 }
 
 // Single project
@@ -64,7 +70,7 @@
         background: $white;
 
         .project-title {
-            @include font-size(20);
+            @include font-size(18);
             display: inline-block;
             padding: 0 0 10px 0;
             color: $grey-dark;
