@@ -1,0 +1,72 @@
+// Students gallery
+
+.students {
+    @extend %container;
+    margin: 60px auto 0;
+
+    .student {
+        display: inline-block;
+        width: 230px;
+        margin: 0 30px 30px 0;
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        .student-image {
+            position: relative;
+            padding: 14px;
+            width: 230px;
+            height: 230px;
+            overflow: hidden;
+            background: $white;
+            border: 1px solid $gold;
+            &:hover { border-color: $gold; }
+
+            img {
+                -webkit-filter: greyscale(75%);
+            }
+
+            .sequence {
+                position: absolute;
+                left: 230px;
+                top: 14px;
+            }
+        }
+
+        .student-details {
+            position: relative;
+            z-index: 100;
+            padding: 35px 15px;
+            text-align: center;
+            background: $white;
+
+            .student-name {
+                @include font-size(18);
+                display: inline-block;
+                padding: 0 0 10px 0;
+                color: $grey-dark;
+                border-bottom: 1px solid $grey-dark;
+                text-transform: uppercase;
+                font-family: $orator;
+                font-weight: 400;
+                margin: 0;
+            }
+
+            .project-title {
+                @include font-size(10);
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                font-family: $tisa;
+                font-weight: 400;
+                //line-height: 0.7em;
+                color: $gold;
+                margin: 10px 0 0 0;
+            }
+
+        }
+
+    }
+
+}
+
+// Single student

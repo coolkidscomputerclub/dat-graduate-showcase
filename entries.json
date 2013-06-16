@@ -14,7 +14,7 @@
         "project": {
             "title": "Message Box",
             "description": "<p>Message Box is a context-aware, tangible and digital interface for mobile voicemail.</p> <p>Incoming messages are instantiated as wooden marbles which can be used to playback their corresponding audio files. A web-based interface provides more fine-grained interaction opportunities.</p> <p>Based on user input and google latitude data; Message Box diverts incoming calls, prompting the caller to leave a message if the recipient is busy, or connecting the call if the user is either available or not in the vicinity the box.</p> <p>Message Box is heavily inspired by Durrell Bishop’s Marble Answer Machine.</p>",
-            "tags": ["Object", "Physical"],
+            "tags": ["Object", "Physical", "Tangible", "Voicemail", "Raspberry Pi", "Twilio", "Arduino", "RFID"],
             "images": 4,
             "vimeoID": "67646753",
             "links": {
@@ -35,7 +35,7 @@
         "project": {
             "title": "Pique",
             "description": "<p>Pique is an experimental photo-sharing app designed to explore how much we can learn about others through the medium of photography.</p> <p>Pique pairs you with another user at random (your Pique Pal) for 30 days, and ecourages you to share unique, intimate insights in to your everyday life.</p> <p>At the end of your time together, you will be asked to share some thoughts about your Pal, the life they lead, and the sort of person they appear to be… and they'll do the same.</p>",
-            "tags": ["Mobile", "iOS", "RubyMotion", "Photo", "App"],
+            "tags": ["Mobile", "iOS", "RubyMotion", "Photo-sharing", "App", "Parse"],
             "images": 2,
             "vimeoID": "67979764",
             "links": {
@@ -56,7 +56,7 @@
         "project": {
             "title": "Osciller",
             "description": "<p>Osciller is an installation that augments the way you interact with live digital music.</p> <p>Osciller engages you, the live audience, further by capturing your dancing through a mobile application. With a colour of your choice, you create a visualisation through your movement.</p>",
-            "tags": ["tag"],
+            "tags": ["Mobile", "App", "Android", "Live Music", "Audience", "Visualisation"],
             "images": 2,
             "vimeoID": "67959830",
             "links": {
@@ -77,7 +77,7 @@
         "project": {
             "title": "Quake",
             "description": "<p>Quake allows you to view music as sound waves interact with the natural material in place in a technological context creating shapes and patterns.</p> <p>The sound of your choice generates involuntary physical responses through seamless motion from liquid to sculpture.</p>",
-            "tags": ["tag"],
+            "tags": ["Audio", "Music", "Sound Sculpture"],
             "images": 2,
             "vimeoID": "67959831",
             "links": {
@@ -98,7 +98,7 @@
         "project": {
             "title": "EXP-duo",
             "description": "<p>EXP-duo gives users a new experience within an architectural space by exposing alternate realities within the space. Whilst walking around the space users may come across negative or positive realities.</p> <p>Behind the exterior, EXPduo runs off a complex integration between Arduino, MQTT, Node.js, MAX 6 and Ableton Live.</p>",
-            "tags": ["tag"],
+            "tags": ["Alternate Realities", "Architecture", "Audio"],
             "images": 2,
             "vimeoID": "67959236",
             "links": {
@@ -119,7 +119,7 @@
         "project": {
             "title": "Mirrored",
             "description": "<p>Mirrored is an experimental video game set in the horror genre. The unique aspect is that the game photographs the player at predetermined \"scary\" moments.</p>",
-            "tags": ["tag"],
+            "tags": ["Game", "Horror"],
             "images": 2,
             "vimeoID": "67959234",
             "links": {
@@ -140,7 +140,7 @@
         "project": {
             "title": "Visualitube",
             "description": "<p>Visualitube is a physical visualisation of live data from the London Underground. It was created to demonstrate and expose the current problems with public transport in order to understand them better.</p> <p>It can run either on live data as it comes in, to be used as a kind of 'news reader', or cycle through the RSS feed from the present backwards.</p>",
-            "tags": ["tag"],
+            "tags": ["Tube", "London Underground", "Physical", "Visualisation"],
             "images": 2,
             "vimeoID": "67959785",
             "links": {
@@ -161,7 +161,7 @@
         "project": {
             "title": "Canute",
             "description": "<p>Canute is a machine for visualising the tide. It uses a set of pumps, valves and sensors to raise and lower the water levels in its three tubes. The tube on the left is one hour ago, on the right is one hour from now.</p> <p>Canute can be described as an actualisation as it uses the same physical material it is representing as a medium. The project is part of collection of experiments in the recreation and translation of patterns of physical material in remote locations.</p>",
-            "tags": ["tag"],
+            "tags": ["Tide", "Water", "Physical"],
             "images": 2,
             "vimeoID": "67959725",
             "links": {
@@ -182,7 +182,7 @@
         "project": {
             "title": "The Emotion…",
             "description": "<p>Films use colour, shape and movement throughout film to emphasize the emotion of the scene. The Emotion Experiment explores how deeply our associations with colour, shape, movement and emotion go.</p> <p>By reducing a film scene down to its most basic shapes, colours and movements. this experiment will allow us to furhter understand how we percieve these emotional triggers and, furthermore, see which ones take the most priority.</p>",
-            "tags": ["tag"],
+            "tags": ["Film", "Emotion", "Colour", "Shape"],
             "images": 2,
             "vimeoID": "67959238",
             "links": {
@@ -203,7 +203,7 @@
         "project": {
             "title": "Mockingbird",
             "description": "<p>Most technology designed for the autistic community aims to change them to fit our world views. Mockingbird does the opposite.</p> <p>It aims to create empathy for the confusing and beautiful ways adults with autism see the world by creating a real-time experience of their symptoms in their own words, to let you see things from their point of view.</p> <p>Mockingbird - Read someone else's story.</p>",
-            "tags": ["tag"],
+            "tags": ["Autism", "Story"],
             "images": 2,
             "vimeoID": "67959238",
             "links": {
@@ -265,8 +265,8 @@
         },
         "project": {
             "title": "Zoe and Dian",
-            "description": "Looks at the technology of moving images, starting with the Zoetrope, and in the future there will be the Dianrang. By researching into the past and comparing it to the present this project aims to show where the technology will advance to in the future. This project also looks at what was and what is entertaining, and predicts what will be the future…",
-            "tags": ["tag"],
+            "description": "<p>Looks at the technology of moving images, starting with the Zoetrope, and in the future there will be the Dianrang.</p> <p>By researching into the past and comparing it to the present this project aims to show where the technology will advance to in the future.</p> <p>This project also looks at what was and what is entertaining, and predicts what will be the future…</p>",
+            "tags": ["Zoetrope", "Moving Image", "Dianrang"],
             "images": 2,
             "vimeoID": "67959834",
             "links": {
@@ -286,8 +286,8 @@
         },
         "project": {
             "title": "Suspense",
-            "description": " Suspense is an instant bullet-time 360 rig designed to take the concept of bullet-time outside the studio and available for public usage at an exhibition.",
-            "tags": ["tag"],
+            "description": "<p>Suspense is an instant bullet-time 360 rig designed to take the concept of bullet-time outside the studio and available for public usage at an exhibition.</p>",
+            "tags": ["Bullet Time", "360", "Exhibition"],
             "images": 2,
             "vimeoID": "67959729",
             "links": {
@@ -307,8 +307,8 @@
         },
         "project": {
             "title": "Gargantuan",
-            "description": "Gargantuan is a stop motion animated short video made with LEGO about an astronaut who is about to go into space on an (unspecified) mission. The project also includes a 15 minute behind the scenes video covering methods I used throughout production and problems with solutions that occurred. This covers from filming through to editing with Premiere Pro and After Effects CS6.",
-            "tags": ["tag"],
+            "description": "<p>Gargantuan is a stop motion animated short video made with LEGO about an astronaut who is about to go into space on an (unspecified) mission.</p>",
+            "tags": ["LEGO", "Stop-motion"],
             "images": 2,
             "vimeoID": "67961116",
             "links": {
@@ -319,7 +319,7 @@
     {
         "student": {
             "name": "Florian Brueckner",
-            "course": "Digital Art & Technology with Game Design",
+            "course": "Digital Art & Technology with Interaction Design",
             "bio": "A guy that is cool.",
             "links": {
                 "twitter": "https://twitter.com/bloomingbridges",
@@ -329,7 +329,7 @@
         "project": {
             "title": "IN//CUBUS",
             "description": "<p>IN//CUBUS is a social experiment with the aim to foster collaboration between strangers in a physical space and to combat the dwindling attention span of long-time internet users.</p>",
-            "tags": ["tag", "another tag"],
+            "tags": ["Cube", "Collaboration"],
             "images": 2,
             "vimeoID": "67979708",
             "links": {
@@ -349,8 +349,8 @@
         },
         "project": {
             "title": "Squish the Crab",
-            "description": "A description for Squish the Crab.",
-            "tags": ["tag", "another tag"],
+            "description": "<p>A wacky micro-game collection for tablets. Play it now, or don't, it's your choice.</p>",
+            "tags": ["Game", "Android"],
             "images": 2,
             "vimeoID": "67979674",
             "links": {
