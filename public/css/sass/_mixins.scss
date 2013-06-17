@@ -23,15 +23,26 @@
 }
 
 // Media Queries
-
 @mixin breakpoint($point) {
-  @if $point == large {
-    @media (max-width: 1289px) and (min-width: 970px) { @content; }
+
+  // Four-column
+  @if $point == largest {
+    @media (min-width: 1070px) { @content; }
   }
+
+  // Three-column
+  @else if $point == large {
+    @media (max-width: 1069px) and (min-width: 810px) { @content; }
+  }
+
+  // Two-column
   @else if $point == medium {
-    @media (max-width: 969px) { @content; }
+    @media (max-width: 809px) and (min-width: 550px) { @content; }
   }
+
+  // Single-column
   @else if $point == small {
-    @media (max-width: 629px) { @content; }
+    @media (max-width: 549px) { @content; }
   }
+
 }
