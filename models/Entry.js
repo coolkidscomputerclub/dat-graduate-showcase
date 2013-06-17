@@ -18,7 +18,8 @@ var EntrySchema = mongoose.Schema({
         links: {
             twitter: String,
             website: String,
-        }
+        },
+        frames: Number
     },
     project: {
         slug: { type: String, required: true, unique: true },
