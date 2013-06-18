@@ -12,7 +12,7 @@ block content
                     article.project
                         .project-image
                             a(href="projects/#{entry.project.slug}")
-                                img(src="/img/message-box-gallery.jpg")
+                                img(src="/img/#{entry.project.slug}.jpg", width="200", height="200")
                                 img.sequence(src="/img/#{entry.student.slug}-sequence.jpg", data-frames="#{entry.student.frames}", width="#{(entry.student.frames)*215}", height="200")
                         .project-details
                             h3.project-title #{entry.project.title}

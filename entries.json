@@ -189,7 +189,7 @@
             "frames" : 17
         },
         "project": {
-            "title": "The Emotion…",
+            "title": "The Emotion Experiment",
             "description": "<p>Films use colour, shape and movement throughout film to emphasize the emotion of the scene. The Emotion Experiment explores how deeply our associations with colour, shape, movement and emotion go.</p> <p>By reducing a film scene down to its most basic shapes, colours and movements. this experiment will allow us to furhter understand how we percieve these emotional triggers and, furthermore, see which ones take the most priority.</p>",
             "tags": ["Film", "Emotion", "Colour", "Shape"],
             "images": 2,
@@ -300,6 +300,7 @@
         },
         "project": {
             "title": "IN//CUBUS",
+            "slug" : "in-cubis",
             "description": "<p>IN//CUBUS is a social experiment with the aim to foster collaboration between strangers in a physical space and to combat the dwindling attention span of long-time internet users.</p>",
             "tags": ["Cube", "Collaboration"],
             "images": 2,
