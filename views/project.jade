@@ -3,8 +3,7 @@ extends layout
 block content
     main(class="main", id="main", role="main")
         header.project-header
-            .featured-image
-                img(src="/img/pique-featured.jpg")
+            .featured-image(style="background-image: url(http://placekitten.com/1000/1000);")
         section.single-project
             .project-details
                 h2.project-title #{entry.project.title}
