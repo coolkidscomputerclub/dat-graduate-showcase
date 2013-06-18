@@ -12,7 +12,7 @@ define(["jquery"], function ($) {
 
         frame: 1,
 
-        frames: 17,
+        frames: null,
 
         frameWidth: 230,
 
@@ -47,6 +47,8 @@ define(["jquery"], function ($) {
             var self = this;
 
             this.active = true;
+
+            this.frames = $el.data("frames");
 
             this.stepSequence($el);
 
