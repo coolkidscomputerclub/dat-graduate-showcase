@@ -5,10 +5,13 @@
 
     .header-inner {
         @extend %container;
+
+        .banner-container {
+            @extend %cf;
+        }
     }
 
     .banner {
-        display: inline-block;
         margin: 0;
         padding: 0 0 50px;
         font-family: $orator;
@@ -18,15 +21,37 @@
         @include line-height(24);
         text-transform: uppercase;
 
-        @include breakpoint(medium) {
+        // Single-column
+        @include breakpoint(small) {
+            float: none;
             display: block;
             text-align: center;
+        }
+
+        // Two-column
+        @include breakpoint(medium) {
+            float: none;
+            display: block;
+            text-align: center;
+        }
+
+        // Three-column
+        @include breakpoint(large) {
+            float: left;
+        }
+
+        // Four-column
+        @include breakpoint(largest) {
+            float: left;
         }
 
         a {
             color: $black;
             border: none;
-            background: yellow;
+
+            @include breakpoint(small) {
+                @include font-size(14);
+            }
 
             &:hover {
                 border: none;
@@ -43,12 +68,26 @@
         float: right;
         @include font-size(16);
 
+        @include breakpoint(small) {
+            float: none;
+            display: block;
+            text-align: center;
+        }
+
         @include breakpoint(medium) {
             float: none;
             display: block;
             text-align: center;
-            background: green;
         }
+
+        @include breakpoint(large) {
+            float: right;
+        }
+
+        @include breakpoint(largest) {
+            float: right;
+        }
+
 
         ul {
             margin: 0;
