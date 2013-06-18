@@ -53,6 +53,10 @@
                 @include font-size(14);
             }
 
+            @include breakpoint(large) {
+                @include font-size(19);
+            }
+
             &:hover {
                 border: none;
                 .dat {
@@ -64,26 +68,32 @@
 
     .nav {
         display: inline-block;
-        margin: -5px 0 0 0;
+        margin: -2px 0 0 0;
         float: right;
         @include font-size(16);
 
+        // Single-column
         @include breakpoint(small) {
             float: none;
             display: block;
             text-align: center;
+            margin: 0 0 50px 0;
         }
 
+        // Two-column
         @include breakpoint(medium) {
             float: none;
             display: block;
             text-align: center;
+            margin: 0 0 50px 0;
         }
 
+        // Three-column
         @include breakpoint(large) {
             float: right;
         }
 
+        // Four-column
         @include breakpoint(largest) {
             float: right;
         }
