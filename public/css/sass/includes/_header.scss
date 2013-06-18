@@ -8,6 +8,7 @@
     }
 
     .banner {
+        display: inline-block;
         margin: 0;
         padding: 0 0 50px;
         font-family: $orator;
@@ -17,9 +18,16 @@
         @include line-height(24);
         text-transform: uppercase;
 
+        @include breakpoint(medium) {
+            display: block;
+            text-align: center;
+        }
+
         a {
             color: $black;
             border: none;
+            background: yellow;
+
             &:hover {
                 border: none;
                 .dat {
@@ -30,9 +38,18 @@
     }
 
     .nav {
+        display: inline-block;
         margin: -5px 0 0 0;
         float: right;
         @include font-size(16);
+
+        @include breakpoint(medium) {
+            float: none;
+            display: block;
+            text-align: center;
+            background: green;
+        }
+
         ul {
             margin: 0;
             padding: 0;
@@ -62,6 +79,23 @@
         text-align: center;
         @include font-size(20);
         font-weight: 400;
+
+        // Three-column
+        @include breakpoint(large) {
+            width: 90%;
+        }
+
+        // Two-column
+        @include breakpoint(medium) {
+            width: 90%;
+            @include font-size(16);
+        }
+
+        // Single-column
+        @include breakpoint(small) {
+            width: 90%;
+            @include font-size(12);
+        }
     }
 }
 

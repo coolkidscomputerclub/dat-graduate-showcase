@@ -5,12 +5,37 @@
     margin: 60px auto 0;
 
     .student {
-        display: inline-block;
-        width: 230px;
-        margin: 0 30px 30px 0;
-        &:nth-child(4n) {
-            margin-right: 0;
-        }
+         display: inline-block;
+         width: 230px;
+         margin: 0 30px 30px 0;
+         background: red;
+
+         // Single column
+         @include breakpoint(small) {
+             display: block;
+             margin-bottom: 30px;
+         }
+
+         // Two-column
+         @include breakpoint(medium) {
+             &:nth-child(2n) {
+                 margin-right: 0;
+             }
+         }
+
+         // Three-column
+         @include breakpoint(large) {
+             &:nth-child(3n) {
+                 margin-right: 0;
+             }
+         }
+
+         // Four-column
+         @include breakpoint(largest) {
+             &:nth-child(4n) {
+                 margin-right: 0;
+             }
+         }
 
         .student-image {
             position: relative;
