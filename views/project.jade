@@ -3,8 +3,7 @@ extends layout
 block content
     main(class="main", id="main", role="main")
         header.project-header
-            .featured-image
-                img(src="/img/pique-featured.jpg")
+            .featured-image(style="background-image: url(/img/#{entry.project.slug}-featured.jpg);")
         section.single-project
             .project-details
                 h2.project-title #{entry.project.title}
@@ -12,8 +11,9 @@ block content
             .project-description
                 !{entry.project.description}
                 if entry.project.links.website
-                    span.project-link Source:
-                        a(href="#{entry.project.links.website}")  #{entry.project.title}
+                    p
+                        span.project-link Source:
+                            a(href="#{entry.project.links.website}")  #{entry.project.title}
                 iframe(class="trailer", src="http://player.vimeo.com/video/#{entry.project.vimeoID}?title=0&byline=0&portrait=0&color=bf9d3e", width="700", height="394", frameborder="0", webkitAllowFullScreen, mozallowfullscreen, allowFullScreen)
             section.tags
                 p Tags:&nbsp;
@@ -26,7 +26,7 @@ block content
         section.about-student
             .about-student-inner
                 .student-image
-                    img(src="http://placekitten.com/150/150")
+                    img(src="/img/#{entry.student.slug}.jpg", width="150", height="150");
                 .student-details
                     .whois
                         h2.student-name #{entry.student.name}

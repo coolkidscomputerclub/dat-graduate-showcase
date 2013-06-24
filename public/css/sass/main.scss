@@ -13,18 +13,36 @@ $text-highlight-color: #b3d4fc;
 $site-width: 1040px;
 
 %container {
-    width: $site-width;
     margin: 0 auto;
     padding: 0 15px;
 
-    // 3-column
-    @include breakpoint(large)  { background: green;    width: 970px; }
+    // Single column
+    @include breakpoint(small) {
+        //background: green;
+        width: 290px;
+        margin: 0 auto;
+    }
 
-    // 2-column
-    @include breakpoint(medium) { background: red;      width: 650px; }
+    // Two-column
+    @include breakpoint(medium) {
+        //background: purple;
+        width: 550px;
+        margin: 0 auto;
+    }
 
-    // 1-column
-    @include breakpoint(small)  { background: blue;     width: 330px; }
+    // Three-column
+    @include breakpoint(large) {
+        //background: yellow;
+        width: 810px;
+        margin: 0 auto;
+    }
+
+    @include breakpoint(largest) {
+        //background: orange;
+        width: $site-width;
+        width: 1070px;
+        margin: 0 auto;
+    }
 }
 
 html {
@@ -54,19 +72,11 @@ body {
     text-shadow: none;
 }
 
-%cf:before,
-%cf:after {
-    content: " ";
-    display: table;
-}
-
-%cf:after { clear: both; }
-%cf { *zoom: 1; }
-
 /* Author: Saul Hardman (@saulhardman) */
 
 * {
     box-sizing: border-box;
+    //-webkit-transition: all .125s;
 }
 
 html {

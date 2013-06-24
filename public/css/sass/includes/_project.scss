@@ -8,21 +8,35 @@
 }
 
 .featured-image {
-    position: relative;
     overflow: hidden;
     width: 100%;
-    height: 530px;
+    background-position: center center;
+    //background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
-    img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: -50%;
-        width: 100%;
+    // Single-column
+    @include breakpoint(small) {
+        height: 180px;
+    }
+
+    @include breakpoint(medium) {
+        height: 240px;
+    }
+
+    @include breakpoint(large) {
+        height: 360px
+    }
+
+    @include breakpoint(largest) {
+        height: 480px;
     }
 }
 
-$single-project-width: 700px;
+$single-project-width: 90%;
+$single-project-max-width: 700px;
 
 .single-project {
     @extend %container;
@@ -58,6 +72,7 @@ $single-project-width: 700px;
 
     .project-description {
         width: $single-project-width;
+        max-width: $single-project-max-width;
         margin: 0 auto 60px;
 
         p {
@@ -67,6 +82,10 @@ $single-project-width: 700px;
             line-height: 1.6em;
         }
 
+        @include breakpoint(small) {
+            width: 100%;
+        }
+
     }
 
     .project-link {
@@ -74,15 +93,26 @@ $single-project-width: 700px;
         font-style: italic;
     }
 
-    .trailer {
-        margin: 60px 0 0;
+    // .trailer {
+    //     margin: 60px 0 60px 0;
+    // }
+
+    // Fitvid
+    .fluid-width-video-wrapper {
+        margin: 60px 0;
     }
 
     .tags {
         @include font-size(18);
         width: $single-project-width;
+        max-width: $single-project-max-width;
         margin: 0 auto 60px;
         font-style: italic;
+
+        // Single-column
+        @include breakpoint(small) {
+            display: none;
+        }
 
         .tag {
             @include font-size(18);
@@ -104,14 +134,16 @@ $single-project-width: 700px;
     border-top: 1px solid $grey-light;
 
     .about-student-inner {
-        @extend %cf;
+        @extend %clearfix;
         width: $single-project-width;
+        max-width: $single-project-max-width;
         clear: both;
         margin: 0 auto;
         padding: 60px 0;
 
         .student-image {
             float: left;
+            width: 150px;
             margin: 0 30px 0 0;
         }
 
@@ -154,9 +186,36 @@ $single-project-width: 700px;
                 }
             }
         }
-
     }
+}
 
+@include breakpoint(small) {
+    .about-student {
+
+        .about-student-inner {
+
+            .student-image {
+                float: none;
+                display: block;
+                margin: 0 auto 30px auto;
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            .student-details {
+                float: none;
+                width: 100%;
+                text-align: center;
+
+                .links li {
+                    display: block;
+                    margin: 0 auto 15px auto;
+                }
+            }
+        }
+    }
 }
 
 
