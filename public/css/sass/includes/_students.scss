@@ -5,7 +5,6 @@
     margin: 60px auto 0;
 
     .student {
-         display: inline-block;
          width: 230px;
          margin: 0 30px 30px 0;
          background: red;
@@ -13,7 +12,7 @@
          // Single column
          @include breakpoint(small) {
              display: block;
-             margin-bottom: 30px;
+             margin: 0 auto 30px auto;
          }
 
          // Two-column

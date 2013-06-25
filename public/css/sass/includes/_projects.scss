@@ -22,7 +22,7 @@
     // Single column
     @include breakpoint(small) {
         display: block;
-        margin-bottom: 30px;
+        margin: 0 auto 30px auto;
     }
 
     // Two-column
