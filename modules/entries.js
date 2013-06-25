@@ -33,6 +33,8 @@ var entries = {
 
             } else {
 
+                helpers.randomise(entries);
+
                 def.resolve(entries);
 
             }
