@@ -1,16 +1,20 @@
 requirejs.config({
     paths: {
         jquery: "components/jquery/jquery",
+        fitvids: "components/fitvids/jquery.fitvids",
         ga: "//www.google-analytics.com/analytics"
     },
     shim: {
+        fitvids: {
+            deps: ["jquery"]
+        },
         ga: {
             exports: "ga"
         }
     }
 });
 
-requirejs(["jquery", "modules/sequence", "modules/retinafy", "modules/analytics", "utilities/log"], function ($, sequence, retinafy, analytics) {
+requirejs(["jquery", "modules/sequence", "modules/retinafy", "fitvids", "modules/analytics", "utilities/log"], function ($, sequence, retinafy, fitvids, analytics) {
 
     var app = {
 
@@ -35,6 +39,8 @@ requirejs(["jquery", "modules/sequence", "modules/retinafy", "modules/analytics"
                 this.Modules[i].init(this.Events);
 
             }
+
+            $(".single-project").fitVids();
 
             this.bindEvents();
 

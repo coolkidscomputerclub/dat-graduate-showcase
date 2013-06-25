@@ -3,6 +3,7 @@
 .students {
     @extend %container;
     margin: 60px auto 0;
+    padding: 0 30px;
 
     .student {
          display: inline-block;
@@ -79,6 +80,7 @@
 
             .project-title {
                 @include font-size(10);
+                width: 200px;
                 text-transform: uppercase;
                 letter-spacing: 5px;
                 font-family: $tisa;
@@ -86,6 +88,9 @@
                 //line-height: 0.7em;
                 color: $gold;
                 margin: 10px 0 0 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
         }
