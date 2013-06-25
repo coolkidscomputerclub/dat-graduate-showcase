@@ -14,7 +14,7 @@
         },
         "project": {
             "title": "Message Box",
-            "description": "<p>Message Box is a context-aware, tangible and digital interface for mobile voicemail.</p> <p>Incoming messages are instantiated as wooden marbles which can be used to playback their corresponding audio files. A web-based interface provides more fine-grained interaction opportunities.</p> <p>Based on user input and google latitude data; Message Box diverts incoming calls, prompting the caller to leave a message if the recipient is busy, or connecting the call if the user is either available or not in the vicinity the box.</p> <p>Message Box is heavily inspired by Durrell Bishop’s Marble Answer Machine.</p>",
+            "description": "<p>Physical, tangible, real objects are, at present, more intimate than their digital counterparts – bits are yet to acquire the charm of the atom.</p><p>Message Box extends a versatile, fine-grained digital voicemail interface into the real world. Benefiting from everything that transition brings with it: affordance, ambience, and embodiment.</p><p>Incoming messages are instantiated as wooden marbles which can be used to playback their corresponding audio files.</p><p>Based on user input and google latitude data; Message Box diverts incoming calls, prompting the caller to leave a message if the recipient is busy, or connecting the call if the user is either available or not in the vicinity of the box.</p>",
             "tags": ["Object", "Physical", "Tangible", "Voicemail", "Raspberry Pi", "Twilio", "Arduino", "RFID"],
             "images": 4,
             "vimeoID": "67646753",
@@ -340,14 +340,34 @@
                 "twitter": "https://twitter.com/joe_willmott",
                 "website": "http://joewillmott.com/"
             },
-            "frames" : 18
+            "frames" : 17
         },
         "project": {
             "title": "Smeaton's Tower of Greed",
             "description": "<p>Smeaton's Tower Of Greed is a multiplayer arcade game in which players must climb Smeaton's Tower, helping eachother to collect as much treasure as possible, whilst also in direct competition.</p> <p>Along the way players are faced with the decision; \"friendship, or greed?\" in circumstances such as reviving your friend... at a cost of half your score, or only the highest-scoring player being allowed to submit their score to the leaderboards.</p> <p>In-game characters share their energy with physical players through motion detection, so if you want to be greedy and gain treasure in-game, you should probably preserve your physical real-world energy.</p>",
             "tags": ["Game", "Arcade", "Motion Detection"],
             "images": 2,
-            "vimeoID": "67979674",
+            "vimeoID": "67958928",
+            "links": {
+            }
+        }
+    },     {
+        "student": {
+            "name": "Robert Dixon",
+            "course": "Digital Art & Technology with Information Design",
+            "bio": "A guy that is cool.",
+            "links": {
+                "twitter": "https://twitter.com/RobertDixon_KD",
+                "website": "http://www.lemoncobweb.co.uk/"
+            },
+            "frames" : 18
+        },
+        "project": {
+            "title": "Operator",
+            "description": "<p>Operator is an interactive digital installation designed to highlight increased social information flows.</p> <p>The object initiates the user experience by means of an ultrasonic sensor and an automated ringing system. On answering the phone, the user is prompted to choose between various RSS feeds using the rotary dial. These feeds are spoken by the tts library within Processing, the audio for which is sent directly through to the earpiece.</p> <p>Operator also allows for the recording and play-back of individual user messages.</p>",
+            "tags": ["Telephone", "Processing", "RSS", "Antique"],
+            "images": 2,
+            "vimeoID": "67959154",
             "links": {
             }
         }
