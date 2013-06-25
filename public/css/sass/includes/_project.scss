@@ -134,7 +134,7 @@ $single-project-max-width: 700px;
     border-top: 1px solid $grey-light;
 
     .about-student-inner {
-        @extend %cf;
+        @extend %clearfix;
         width: $single-project-width;
         max-width: $single-project-max-width;
         clear: both;

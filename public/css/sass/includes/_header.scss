@@ -1,15 +1,7 @@
 .site-header {
+    @extend %container;
     margin: 0 auto;
-    padding: 50px 0 0;
-    background: $white;
-
-    .header-inner {
-        @extend %container;
-
-        .banner-container {
-            @extend %cf;
-        }
-    }
+    padding: 50px 30px 0;
 
     .banner {
         margin: 0;
@@ -26,23 +18,28 @@
             float: none;
             display: block;
             text-align: center;
+            .dat {
+                margin: 0;
+            }
+            .title {
+                display: none;
+            }
         }
 
         // Two-column
         @include breakpoint(medium) {
-            float: none;
             display: block;
             text-align: center;
         }
 
         // Three-column
         @include breakpoint(large) {
-            float: left;
+            display: block;
         }
 
         // Four-column
         @include breakpoint(largest) {
-            float: left;
+            display: block;
         }
 
         a {
@@ -67,9 +64,8 @@
     }
 
     .nav {
-        display: inline-block;
-        margin: -2px 0 0 0;
         float: right;
+        margin: -2px 0 0 0;
         @include font-size(16);
 
         // Single-column
@@ -104,6 +100,7 @@
             padding: 0;
             list-style: none;
         }
+
         a {
             margin: 0 8px 0 8px;
             color: $black;
@@ -150,8 +147,10 @@
 
 .page-project {
 
-
     .description {
+
         display: none;
+
     }
+
 }

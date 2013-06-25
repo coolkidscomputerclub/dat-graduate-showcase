@@ -1,16 +1,19 @@
 .site-footer {
-    padding: 60px 0;
     border-top: 1px solid $grey-light;
+}
 
-    .footer-inner {
-        @extend %container;
-        text-align: center;
+.footer-inner {
+    @extend %clearfix;
+    @extend %container;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
-        .course-details {
-            //float: right;
-            margin: -5px 0 0 0;
-        }
+.copyright {
+    float: left;
+}
 
-    }
-
+.course-details {
+    float: right;
 }

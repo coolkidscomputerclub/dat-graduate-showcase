@@ -11,8 +11,9 @@ block content
             .project-description
                 !{entry.project.description}
                 if entry.project.links.website
-                    span.project-link Source:
-                        a(href="#{entry.project.links.website}")  #{entry.project.title}
+                    p
+                        span.project-link Source:
+                            a(href="#{entry.project.links.website}")  #{entry.project.title}
                 iframe(class="trailer", src="http://player.vimeo.com/video/#{entry.project.vimeoID}?title=0&byline=0&portrait=0&color=bf9d3e", width="700", height="394", frameborder="0", webkitAllowFullScreen, mozallowfullscreen, allowFullScreen)
             section.tags
                 p Tags:&nbsp;

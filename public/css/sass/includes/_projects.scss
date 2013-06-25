@@ -51,9 +51,9 @@
         padding: 14px;
         width: 230px;
         height: 230px;
-        overflow: hidden;
         background: $white;
         border: 1px solid $gold;
+        overflow: hidden;
 
         img {
             //-webkit-filter: grayscale(75%);
@@ -73,21 +73,25 @@
 
     .project-details {
         position: relative;
-        z-index: 100;
         padding: 35px 15px;
         text-align: center;
         background: $white;
+        z-index: 100;
 
         .project-title {
-            @include font-size(18);
             display: inline-block;
+            margin: 0;
             padding: 0 0 10px 0;
+            width: 200px;
+            @include font-size(18);
             color: $grey-dark;
-            border-bottom: 1px solid $grey-dark;
             text-transform: uppercase;
             font-family: $orator;
             font-weight: 400;
-            margin: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            border-bottom: 1px solid $grey-dark;
+            overflow: hidden;
         }
 
         .student {

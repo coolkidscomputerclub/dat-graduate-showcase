@@ -1,0 +1,8 @@
+.event {
+    margin: 60px auto;
+    @extend %container;
+}
+
+.flier {
+    border: 20px solid $gold;
+}

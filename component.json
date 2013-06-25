@@ -4,6 +4,7 @@
     "dependencies": {
         "modernizr": "*",
         "jquery": "*",
-        "requirejs": "*"
+        "requirejs": "*",
+        "fitvids": "*"
     }
 }

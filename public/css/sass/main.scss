@@ -72,15 +72,6 @@ body {
     text-shadow: none;
 }
 
-%cf:before,
-%cf:after {
-    content: " ";
-    display: table;
-}
-
-%cf:after { clear: both; }
-%cf { *zoom: 1; }
-
 /* Author: Saul Hardman (@saulhardman) */
 
 * {
@@ -98,8 +89,9 @@ body {
 }
 
 a {
+    // padding: 0 0 2px;
     color: $black;
-    @include line-height(12);
+    @include line-height(20);
     text-decoration: none;
     border-bottom: 1px dotted $black;
     &:hover {
@@ -131,6 +123,11 @@ a {
 ================================================== */
 
 @import "includes/project";
+
+/* # Event View
+================================================== */
+
+@import "includes/event";
 
 /* # Students Gallery
 ================================================== */
