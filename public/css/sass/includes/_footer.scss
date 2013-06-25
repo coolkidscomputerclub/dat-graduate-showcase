@@ -17,3 +17,19 @@
 .course-details {
     float: right;
 }
+
+@include breakpoint(small) {
+
+    .site-footer {
+        text-align: center;
+
+        .copyright, .course-details {
+            float: none;
+            display: block;
+        }
+
+        .copyright {
+            margin: 0 0 15px 0;
+        }
+    }
+}

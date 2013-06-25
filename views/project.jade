@@ -31,12 +31,11 @@ block content
                     .whois
                         h2.student-name #{entry.student.name}
                         p.course #{entry.student.course}
-                    .bio
-                        p !{entry.student.bio}
-                    ul.links
-                        if entry.student.links.website
-                            li
-                                a.student-link(href="#{entry.student.links.website}") Portfolio
-                        if entry.student.links.twitter
-                            li
-                                a.student-link(href="#{entry.student.links.twitter}") Twitter
+                    if entry.student.links.website || entry.student.links.twitter
+                        ul.links
+                            if entry.student.links.website
+                                li
+                                    a.student-link(href="#{entry.student.links.website}") Portfolio
+                            if entry.student.links.twitter
+                                li
+                                    a.student-link(href="#{entry.student.links.twitter}") Twitter

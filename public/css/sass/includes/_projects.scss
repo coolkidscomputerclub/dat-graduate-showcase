@@ -22,7 +22,7 @@
     // Single column
     @include breakpoint(small) {
         display: block;
-        margin-bottom: 30px;
+        margin: 0 auto 30px auto;
     }
 
     // Two-column
@@ -81,7 +81,7 @@
             display: inline-block;
             margin: 0;
             padding: 0 0 10px 0;
-            width: 200px;
+            max-width: 200px;
             @include font-size(18);
             color: $grey-dark;
             text-transform: uppercase;
@@ -105,6 +105,5 @@
         }
 
     }
-
 
 }
