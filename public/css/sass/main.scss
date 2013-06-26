@@ -9,7 +9,7 @@ $gray: #e5e5e5;
 $dark-gray: #a5a5a5;
 $highlight: rgb(0, 193, 156);
 $font-size: 14;
-$text-highlight-color: #b3d4fc;
+$text-highlight-color: $gold;
 $site-width: 1040px;
 
 %container {
@@ -65,11 +65,13 @@ body {
 ::-moz-selection {
     background: $text-highlight-color;
     text-shadow: none;
+    color: white;
 }
 
 ::selection {
     background: $text-highlight-color;
     text-shadow: none;
+    color: white;
 }
 
 /* Author: Saul Hardman (@saulhardman) */
