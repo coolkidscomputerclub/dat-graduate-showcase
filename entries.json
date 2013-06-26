@@ -330,5 +330,46 @@
             "links": {
             }
         }
+    },
+    {
+        "student": {
+            "name": "Joe Willmott",
+            "course": "Digital Art & Technology with Game Design",
+            "bio": "A guy that is cool.",
+            "links": {
+                "twitter": "https://twitter.com/joe_willmott",
+                "website": "http://joewillmott.com/"
+            },
+            "frames" : 17
+        },
+        "project": {
+            "title": "Smeaton's Tower of Greed",
+            "description": "<p>Smeaton's Tower Of Greed is a multiplayer arcade game in which players must climb Smeaton's Tower, helping eachother to collect as much treasure as possible, whilst also in direct competition.</p> <p>Along the way players are faced with the decision; \"friendship, or greed?\" in circumstances such as reviving your friend... at a cost of half your score, or only the highest-scoring player being allowed to submit their score to the leaderboards.</p> <p>In-game characters share their energy with physical players through motion detection, so if you want to be greedy and gain treasure in-game, you should probably preserve your physical real-world energy.</p>",
+            "tags": ["Game", "Arcade", "Motion Detection"],
+            "images": 2,
+            "vimeoID": "67958928",
+            "links": {
+            }
+        }
+    },     {
+        "student": {
+            "name": "Robert Dixon",
+            "course": "Digital Art & Technology with Information Design",
+            "bio": "A guy that is cool.",
+            "links": {
+                "twitter": "https://twitter.com/RobertDixon_KD",
+                "website": "http://www.lemoncobweb.co.uk/"
+            },
+            "frames" : 18
+        },
+        "project": {
+            "title": "Operator",
+            "description": "<p>Operator is an interactive digital installation designed to highlight increased social information flows.</p> <p>The object initiates the user experience by means of an ultrasonic sensor and an automated ringing system. On answering the phone, the user is prompted to choose between various RSS feeds using the rotary dial. These feeds are spoken by the tts library within Processing, the audio for which is sent directly through to the earpiece.</p> <p>Operator also allows for the recording and play-back of individual user messages.</p>",
+            "tags": ["Telephone", "Processing", "RSS", "Antique"],
+            "images": 2,
+            "vimeoID": "67959154",
+            "links": {
+            }
+        }
     }]
 }

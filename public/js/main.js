@@ -48,7 +48,17 @@ requirejs(["jquery", "modules/sequence", "modules/retinafy", "fitvids", "modules
 
         bindEvents: function () {
 
-            // bind some events
+            // prevent default hover behaviour
+
+            $("a").on("touchend", function (e) {
+
+                e.preventDefault();
+
+                window.location.href = $(this).attr("href");
+
+                return false;
+
+            });
 
         }
 
