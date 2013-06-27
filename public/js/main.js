@@ -50,14 +50,30 @@ requirejs(["jquery", "modules/sequence", "modules/retinafy", "fitvids", "modules
 
             // prevent default hover behaviour
 
+            var touchMoved = false;
+
             $("a").on("touchend", function (e) {
 
                 e.preventDefault();
 
-                window.location.href = $(this).attr("href");
+                if (touchMoved === false) {
+
+                    window.location.href = $(this).attr("href");
+
+                }
 
                 return false;
 
+            });
+
+            $(window).on("touchmove", function () {
+
+                touchMoved = true;
+
+            }).on("touchstart", function () {
+
+                touchMoved = false;
+                
             });
 
         }
