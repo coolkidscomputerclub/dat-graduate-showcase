@@ -2,7 +2,7 @@ requirejs.config({
     paths: {
         jquery: "components/jquery/jquery",
         fitvids: "components/fitvids/jquery.fitvids",
-        ga: "//www.google-analytics.com/analytics"
+        ga: "utilities/analytics"
     },
     shim: {
         fitvids: {
