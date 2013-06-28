@@ -2,7 +2,7 @@
  * Dependencies
  */
 
-global.debugMode = false;
+global.debugMode = true;
 
 var express = require("express"),
     routes = require("./routes"),
