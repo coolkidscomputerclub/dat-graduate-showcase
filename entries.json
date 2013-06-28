@@ -234,7 +234,7 @@
         },
         "project": {
             "title": "Command Control",
-            "description": "<p>Command Control is a 3 player game, each player controls an area of a spaceship and must relay instructions to other players while simultaneously acting on instructions they receive.</p> <p>Players interact using a physical controller with buttons, switches, potentiometers and a screen to see a visual representation of their controllers.</p> <p>Instructions are displayed with a time limit as players work their way through diffrent zones. Pressing the wrong buttons or runing out of time will damage the ship until it's eventual destruction.</p>",
+            "description": "<p>Command Control is a three person interactive physical game.</p> <p>Players are presented with a situation in which they control a spaceship which is falling apart. As the game is played each player receives messages that require switches, buttons, dials and sliders to be activated or deactivated. Control names are mapped onto a button layout seen on the screen, these change between rounds to make things extra complicated. Players shout out instructions and crazy space controls to attempt to save the ship using their physical controls.</p> <p> Command Control create fun interactions between people.</p> <p>Inspired by the IOS game Spaceteam created by Henry Smith.</p>",
             "tags": ["Game", "Arduino", "MQTT", "Physical", "Websockets", "Socket.io", "Node.js"],
             "images": 2,
             "vimeoID": "67979772",
