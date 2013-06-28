@@ -148,11 +148,14 @@ $single-project-max-width: 700px;
         .student-image {
             width: 150px;
             margin: 0 auto 30px auto;
+            border: 1px solid $gold;
+            border-radius: 50%;
+            padding: 7px;
 
             img {
-                padding: 8px;
-                border-radius: 75px;
-                border: 1px solid $gold;
+                height: 135px;
+                width: 135px;
+                border-radius: 50%;
             }
         }
 

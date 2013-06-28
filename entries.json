@@ -14,7 +14,7 @@
         },
         "project": {
             "title": "Message Box",
-            "description": "<p>Physical, tangible, real objects are, at present, more intimate than their digital counterparts – bits are yet to acquire the charm of the atom.</p><p>Message Box extends a versatile, fine-grained digital voicemail interface into the real world. Benefiting from everything that transition brings with it: affordance, ambience, and embodiment.</p><p>Incoming messages are instantiated as wooden marbles which can be used to playback their corresponding audio files.</p><p>Based on user input and google latitude data; Message Box diverts incoming calls, prompting the caller to leave a message if the recipient is busy, or connecting the call if the user is either available or not in the vicinity of the box.</p>",
+            "description": "<p>Message Box is an attempt to put the joy back into receiving voicemail</p><p>Physical, tangible, real objects are, at present, more intimate than their digital counterparts – bits are yet to acquire the charm of the atom.</p><p>Message Box extends a versatile, fine-grained digital voicemail interface into the real world. Benefiting from everything that transition brings with it: affordance, ambience, and embodiment.</p><p>Incoming messages are instantiated as wooden marbles which can be used to playback their corresponding audio files. </p><p>Based on user input and google latitude data; Message Box diverts incoming calls, prompting the caller to leave a message if the recipient is busy, or connecting the call if the user is either available or not in the vicinity of the box.</p>",
             "tags": ["Object", "Physical", "Tangible", "Voicemail", "Raspberry Pi", "Twilio", "Arduino", "RFID"],
             "images": 4,
             "vimeoID": "67646753",
@@ -215,7 +215,7 @@
             "description": "<p>Most technology designed for the autistic community aims to change them to fit our world views. Mockingbird does the opposite.</p> <p>It aims to create empathy for the confusing and beautiful ways adults with autism see the world by creating a real-time experience of their symptoms in their own words, to let you see things from their point of view.</p> <p>Mockingbird - Read someone else's story.</p>",
             "tags": ["Autism", "Story"],
             "images": 2,
-            "vimeoID": "67959238",
+            "vimeoID": "67959156",
             "links": {
                 "website": ""
             }
