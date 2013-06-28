@@ -8,7 +8,7 @@
   line-height: ($value / 10) + rem;
 }
 
-@mixin at2x($image_name, $w: auto, $h: auto, $extension: ".png") {
+@mixin at2x ($image_name, $w: auto, $h: auto, $extension: ".png") {
   background-image: url($image_name + $extension);
   $x2img: $image_name + "@2x" + $extension;
 
@@ -18,11 +18,11 @@
   }
 }
 
-@mixin featured-images(){
+@mixin featured-images () {
 
   @each $project in $project-list {
       
-    .#{$project} {
+    &.#{$project} {
       background-image: url("../img/#{$project}-featured.jpg");
 
       @media all and (-webkit-min-device-pixel-ratio: 1.5) {
