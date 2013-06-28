@@ -18,6 +18,21 @@
   }
 }
 
+@mixin featured-images(){
+
+  @each $project in $project-list {
+      
+    .#{$project} {
+      background-image: url("../img/#{$project}-featured.jpg");
+
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+    
+        background-image: url("../img/#{$project}-featured@2x.jpg");
+      }
+    }  
+  }
+}
+
 @mixin font-family-sans-serif ($primary-font) {
     font-family: $primary-font, helvetica, arial, verdana, sans-serif;
 }

@@ -35,6 +35,8 @@
     }
 }
 
+@include featured-images();
+
 $single-project-width: 90%;
 $single-project-max-width: 700px;
 
