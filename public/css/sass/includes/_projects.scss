@@ -55,11 +55,8 @@
         border: 1px solid $gold;
         overflow: hidden;
 
-        img {
-        }
-
         &:hover {
-            border-color: $gold;
+            border-color: $black;
         }
 
         .sequence {

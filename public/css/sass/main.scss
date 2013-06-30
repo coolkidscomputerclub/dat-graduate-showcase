@@ -78,7 +78,7 @@ body {
 /* Author: Saul Hardman (@saulhardman) */
 
 * {
-    @include prefixer(box-sizing, border-box, o moz webkit spec);
+    @include prefixer(box-sizing, border-box, o moz webkit ms spec);
 }
 
 html {
@@ -110,12 +110,6 @@ a {
 
 @import "includes/header";
 
-/* # Main Content
-================================================== */
-
-.main {
-}
-
 /* # Projects Gallery
 ================================================== */
 
@@ -140,8 +134,3 @@ a {
 ================================================== */
 
 @import "includes/footer";
-
-/* # Media Queries
-================================================== */
-
-@import "media-queries";

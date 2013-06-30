@@ -48,9 +48,8 @@
                 overflow: hidden;
                 background: $white;
                 border: 1px solid $gold;
-                &:hover { border-color: $gold; }
-
-                img {
+                &:hover {
+                    border-color: $black;
                 }
 
                 .sequence {
