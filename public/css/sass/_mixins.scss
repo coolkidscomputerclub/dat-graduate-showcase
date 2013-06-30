@@ -8,7 +8,7 @@
   line-height: ($value / 10) + rem;
 }
 
-@mixin at2x($image_name, $w: auto, $h: auto, $extension: ".png") {
+@mixin at2x ($image_name, $w: auto, $h: auto, $extension: ".png") {
   background-image: url($image_name + $extension);
   $x2img: $image_name + "@2x" + $extension;
 
@@ -18,18 +18,42 @@
   }
 }
 
-@mixin featured-images(){
+@mixin prefixer ($property, $value, $prefixes) {
 
+  @each $prefix in $prefixes {
+
+    @if $prefix == webkit {
+      -webkit-#{$property}: $value;
+    }
+    @else if $prefix == moz {
+      -moz-#{$property}: $value;
+    }
+    @else if $prefix == ms {
+      -ms-#{$property}: $value;
+    }
+    @else if $prefix == o {
+      -o-#{$property}: $value;
+    }
+    @else if $prefix == spec {
+      #{$property}: $value;
+    }
+    @else  {
+      @warn "Unrecognized prefix: #{$prefix}";
+    }
+  }
+}
+
+@mixin featured-images(){
   @each $project in $project-list {
-      
-    .#{$project} {
+
+    &.#{$project} {
+
       background-image: url("../img/#{$project}-featured.jpg");
 
       @media all and (-webkit-min-device-pixel-ratio: 1.5) {
-    
         background-image: url("../img/#{$project}-featured@2x.jpg");
       }
-    }  
+    }
   }
 }
 
