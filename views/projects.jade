@@ -2,10 +2,6 @@ extends layout
 
 block content
     main(class="main", id="main", role="main")
-        //h2= title
-
-        // entries object contains multiple { student: {}, project: {} } objects
-
         section.projects
             .projects-inner
                 each entry in entries
@@ -17,5 +13,3 @@ block content
                         .project-details
                             h3.project-title #{entry.project.title}
                             p.student #{entry.student.name}
-                            //p.description #{entry.project.description}
-

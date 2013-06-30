@@ -61,7 +61,7 @@ var entryController = {
                 res.render("project", {
                     debugMode: debugMode,
                     year: (new Date()).getUTCFullYear(),
-                    title: "Project",
+                    title: entry.project.title,
                     view: "page-project",
                     entry: entry
                 });
