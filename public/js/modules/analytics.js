@@ -8,7 +8,7 @@ define(["ga"], function (ga) {
 
             this.Events = Events;
 
-            this.ga("create", "UA-41990880-1", "datdegreeshow.co.uk");
+            this.ga("create", "UA-36035812-2", "digitalartandtechnology.co.uk");
 
             this.ga("send", "pageview");
 
