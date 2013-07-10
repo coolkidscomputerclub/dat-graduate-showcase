@@ -9,7 +9,7 @@
         "express": "*",
         "jade": "*",
         "mongoose": "*",
-        "underscore": "*",
+        "underscore": "1.4.4",
         "jquery-deferred": "*"
     },
     "devDependencies": {
