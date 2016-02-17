@@ -6,11 +6,11 @@
         "start": "node app"
     },
     "dependencies": {
-        "express": "*",
-        "jade": "*",
-        "mongoose": "*",
+        "express": "3.2.6",
+        "jade": "0.31.2",
+        "mongoose": "3.6.11",
         "underscore": "1.4.4",
-        "jquery-deferred": "*"
+        "jquery-deferred": "0.3.0"
     },
     "devDependencies": {
         "grunt": "*",
