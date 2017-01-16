@@ -1,3 +1,3 @@
 # Digital Art & Technology 2013 Graduate Degree Show
 
-Boats and hoes; gifs and tables.
+See it [here](https://dat.coolkidscomputer.club).
