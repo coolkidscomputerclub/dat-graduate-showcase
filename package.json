@@ -1,22 +1,21 @@
 {
-    "name": "dat-degree-show",
-    "version": "0.0.1",
-    "private": true,
-    "scripts": {
-        "start": "node app"
-    },
-    "dependencies": {
-        "express": "3.2.6",
-        "jade": "0.31.2",
-        "mongoose": "3.6.11",
-        "underscore": "1.4.4",
-        "jquery-deferred": "0.3.0"
-    },
-    "devDependencies": {
-        "grunt": "*",
-        "grunt-contrib-requirejs": "*",
-        "grunt-contrib-sass": "*",
-        "grunt-contrib-watch": "*",
-        "grunt-contrib-jshint": "*"
-    }
+  "name": "dat-degree-show",
+  "version": "0.0.2",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.2.6",
+    "jade": "0.31.2",
+    "lodash.find": "^4.6.0",
+    "lodash.shuffle": "^4.2.0"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-requirejs": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-jshint": "*"
+  }
 }

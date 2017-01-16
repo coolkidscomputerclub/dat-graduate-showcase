@@ -15,13 +15,13 @@ block content
                     p
                         span.project-link Source:
                             a(href="#{entry.project.links.website}")  #{entry.project.title}
-                iframe(class="trailer", src="http://player.vimeo.com/video/#{entry.project.vimeoID}?title=0&byline=0&portrait=0&color=bf9d3e", width="700", height="394", frameborder="0", webkitAllowFullScreen, mozallowfullscreen, allowFullScreen)
+                iframe(class="trailer", src="https://player.vimeo.com/video/#{entry.project.vimeoID}?title=0&byline=0&portrait=0&color=bf9d3e", width="700", height="394", frameborder="0", webkitAllowFullScreen, mozallowfullscreen, allowFullScreen)
             section.tags
-                p Tags: 
+                p Tags:
                     each tag, i in entry.project.tags
                         span.tag #{tag}
                         if i != entry.project.tags.length - 1
-                            | , 
+                            | ,
                         else
                             | .
         section.about-student

@@ -5,16 +5,9 @@
 global.debugMode = false;
 
 var express = require("express"),
-    routes = require("./routes"),
-    database = require("./modules/database"),
+    routes = require("./app/routes"),
     http = require("http"),
     path = require("path");
-
-database.connect().then(function (name) {
-
-    console.log("Database connected: ", name);
-
-});
 
 /**
  * App
@@ -27,7 +20,7 @@ app.configure(function () {
 
     app.set("port", process.env.PORT || port);
 
-    app.set("views", __dirname + "/views");
+    app.set("views", path.join(__dirname, "app/views"));
 
     app.set("view engine", "jade");
 
