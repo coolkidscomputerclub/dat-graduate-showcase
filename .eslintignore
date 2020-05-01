@@ -1,0 +1,6 @@
+.nuxt/
+dist/
+assets/data/
+*.min.*
+node_modules/
+workers-site/worker/

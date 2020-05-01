@@ -1,409 +1,416 @@
-{
-    "entries": [
-        {
-            "student": {
-                "name": "Saul Hardman",
-                "slug": "saul-hardman",
-                "course": "Digital Art & Technology with Interaction Design",
-                "bio": "bio",
-                "links": {
-                    "twitter": "http://twitter.com/saulhardman",
-                    "website": "http://iamsaul.co.uk"
-                },
-                "frames" : 17
-            },
-            "project": {
-                "title": "Message Box",
-                "slug": "message-box",
-                "description": "<p>Message Box is an attempt to put the joy back into receiving voicemail</p><p>Physical, tangible, real objects are, at present, more intimate than their digital counterparts – bits are yet to acquire the charm of the atom.</p><p>Message Box extends a versatile, fine-grained digital voicemail interface into the real world. Benefiting from everything that transition brings with it: affordance, ambience, and embodiment.</p><p>Incoming messages are instantiated as wooden marbles which can be used to playback their corresponding audio files. </p><p>Based on user input and google latitude data; Message Box diverts incoming calls, prompting the caller to leave a message if the recipient is busy, or connecting the call if the user is either available or not in the vicinity of the box.</p>",
-                "tags": ["Object", "Physical", "Tangible", "Voicemail", "Raspberry Pi", "Twilio", "Arduino", "RFID"],
-                "images": 4,
-                "vimeoID": "67646753",
-                "links": {
-                    "website": "http://iamsaul.co.uk/projects/message-box"
-                }
-            }
-        },
-        {
-            "student": {
-                "name": "Ben Ashman",
-                "slug": "ben-ashman",
-                "course": "Digital Art & Technology with Interaction Design",
-                "bio": "bio",
-                "links": {
-                    "twitter": "http://twitter.com/benashman",
-                    "website": "http://benashman.co.uk"
-                },
-                "frames" : 17
-            },
-            "project": {
-                "title": "Pique",
-                "slug": "pique",
-                "description": "<p>Pique is an experimental photo-sharing app designed to explore how much we can learn about others through the medium of photography.</p> <p>Pique pairs you with another user at random (your Pique Pal) for 30 days, and ecourages you to share unique, intimate insights in to your everyday life.</p> <p>At the end of your time together, you will be asked to share some thoughts about your Pal, the life they lead, and the sort of person they appear to be… and they'll do the same.</p>",
-                "tags": ["Mobile", "iOS", "RubyMotion", "Photo-sharing", "App", "Parse"],
-                "images": 2,
-                "vimeoID": "67979764",
-                "links": {
-                    "website": "http://pique.in"
-                }
-            }
-        },
-        {
-            "student": {
-                "name": "Chris Tough",
-                "slug": "chris-tough",
-                "course": "Digital Art & Technology with Interaction Design",
-                "bio": "bio",
-                "links": {
-                    "twitter": "https://twitter.com/christough",
-                    "website": "http://www.christophertough.co.uk/"
-                },
-                "frames" : 15
-            },
-            "project": {
-                "title": "Osciller",
-                "slug": "osciller",
-                "description": "<p>Osciller is an installation that augments the way you interact with live digital music.</p> <p>Osciller engages you, the live audience, further by capturing your dancing through a mobile application. With a colour of your choice, you create a visualisation through your movement.</p>",
-                "tags": ["Mobile", "App", "Android", "Live Music", "Audience", "Visualisation"],
-                "images": 2,
-                "vimeoID": "67959830",
-                "links": {
-                    "website": "http://www.christophertough.co.uk/osciller/"
-                }
-            }
-        },
-        {
-            "student": {
-                "name": "Dan Morris",
-                "slug": "dan-morris",
-                "course": "Digital Art & Technology with Information Design",
-                "bio": "bio",
-                "links": {
-                    "twitter": "",
-                    "website": ""
-                },
-                "frames" : 18
-            },
-            "project": {
-                "title": "Quake",
-                "slug": "quake",
-                "description": "<p>Quake allows you to view music as sound waves interact with the natural material in place in a technological context creating shapes and patterns.</p> <p>The sound of your choice generates involuntary physical responses through seamless motion from liquid to sculpture.</p>",
-                "tags": ["Audio", "Music", "Sound Sculpture"],
-                "images": 2,
-                "vimeoID": "67959831",
-                "links": {
-                    "website": ""
-                }
-            }
-        },
-        {
-            "student": {
-                "name": "Dom Talbot",
-                "slug": "dom-talbot",
-                "course": "Digital Art & Technology with Information Design",
-                "bio": "bio",
-                "links": {
-                    "twitter": "https://twitter.com/Domjtalbot",
-                    "website": "http://www.djtalbot.com/"
-                },
-                "frames" : 14
-            },
-            "project": {
-                "title": "EXP-duo",
-                "slug": "exp-duo",
-                "description": "<p>EXP-duo gives users a new experience within an architectural space by exposing alternate realities within the space. Whilst walking around the space users may come across negative or positive realities.</p> <p>Behind the exterior, EXPduo runs off a complex integration between Arduino, MQTT, Node.js, MAX 6 and Ableton Live.</p>",
-                "tags": ["Alternate Realities", "Architecture", "Audio"],
-                "images": 2,
-                "vimeoID": "67959236",
-                "links": {
-                    "website": ""
-                }
-            }
-        },
-        {
-            "student": {
-                "name": "James Morgan",
-                "slug": "james-morgan",
-                "course": "Digital Media and Animation",
-                "bio": "bio",
-                "links": {
-                    "twitter": "",
-                    "website": ""
-                },
-                "frames" : 17
-            },
-            "project": {
-                "title": "Mirrored",
-                "slug": "mirrored",
-                "description": "<p>Mirrored is an experimental video game set in the horror genre. The unique aspect is that the game photographs the player at predetermined \"scary\" moments.</p>",
-                "tags": ["Game", "Horror"],
-                "images": 2,
-                "vimeoID": "67959234",
-                "links": {
-                    "website": ""
-                }
-            }
-        },
-        {
-            "student": {
-                "name": "Jessi Dimmock",
-                "slug": "jessi-dimmock",
-                "course": "Digital Art & Technology with Information Design",
-                "bio": "bio",
-                "links": {
-                    "twitter": "",
-                    "website": ""
-                },
-                "frames" : 18
-            },
-            "project": {
-                "title": "Visualitube",
-                "slug": "visualitube",
-                "description": "<p>Visualitube is a physical visualisation of live data from the London Underground. It was created to demonstrate and expose the current problems with public transport in order to understand them better.</p> <p>It can run either on live data as it comes in, to be used as a kind of 'news reader', or cycle through the RSS feed from the present backwards.</p>",
-                "tags": ["Tube", "London Underground", "Physical", "Visualisation"],
-                "images": 2,
-                "vimeoID": "67959785",
-                "links": {
-                    "website": ""
-                }
-            }
-        },
-        {
-            "student": {
-                "name": "Jonathan Redwood",
-                "slug": "jonathan-redwood",
-                "course": "Digital Art & Technology with Information Design",
-                "bio": "bio",
-                "links": {
-                    "twitter": "https://twitter.com/JonathanRedwood",
-                    "website": "http://jred.co.uk/"
-                },
-                "frames" : 18
-            },
-            "project": {
-                "title": "Canute",
-                "slug": "canute",
-                "description": "<p>Canute is a machine for visualising the tide. It uses a set of pumps, valves and sensors to raise and lower the water levels in its three tubes. The tube on the left is one hour ago, on the right is one hour from now.</p> <p>Canute can be described as an actualisation as it uses the same physical material it is representing as a medium. The project is part of collection of experiments in the recreation and translation of patterns of physical material in remote locations.</p>",
-                "tags": ["Tide", "Water", "Physical"],
-                "images": 2,
-                "vimeoID": "67959725",
-                "links": {
-                    "website": ""
-                }
-            }
-        },
-        {
-            "student": {
-                "name": "Joshua Silvester",
-                "slug": "joshua-silvester",
-                "course": "Digital Media and Animation",
-                "bio": "bio",
-                "links": {
-                    "twitter": "",
-                    "website": ""
-                },
-                "frames" : 17
-            },
-            "project": {
-                "title": "The Emotion Experiment",
-                "slug": "the-emotion-experiment",
-                "description": "<p>Films use colour, shape and movement throughout film to emphasize the emotion of the scene. The Emotion Experiment explores how deeply our associations with colour, shape, movement and emotion go.</p> <p>By reducing a film scene down to its most basic shapes, colours and movements. this experiment will allow us to furhter understand how we percieve these emotional triggers and, furthermore, see which ones take the most priority.</p>",
-                "tags": ["Film", "Emotion", "Colour", "Shape"],
-                "images": 2,
-                "vimeoID": "67959238",
-                "links": {
-                    "website": ""
-                }
-            }
-        },
-        {
-            "student": {
-                "name": "Lizzie Seymour",
-                "slug": "lizzie-seymour",
-                "course": "Digital Art & Technology with Interaction Design",
-                "bio": "bio",
-                "links": {
-                    "twitter": "https://twitter.com/imaginehonesty",
-                    "website": "http://lizz.es/"
-                },
-                "frames" : 20
-            },
-            "project": {
-                "title": "Mockingbird",
-                "slug": "mockingbird",
-                "description": "<p>Most technology designed for the autistic community aims to change them to fit our world views. Mockingbird does the opposite.</p> <p>It aims to create empathy for the confusing and beautiful ways adults with autism see the world by creating a real-time experience of their symptoms in their own words, to let you see things from their point of view.</p> <p>Mockingbird - Read someone else's story.</p>",
-                "tags": ["Autism", "Story"],
-                "images": 2,
-                "vimeoID": "67959156",
-                "links": {
-                    "website": ""
-                }
-            }
-        },
-        {
-            "student": {
-                "name": "Sam Billingham",
-                "slug": "sam-billingham",
-                "course": "Digital Art & Technology with Interaction Design",
-                "bio": "bio",
-                "links": {
-                    "twitter": "http://twitter.com/sambillingham",
-                    "website": "http://sambillingham.com/"
-                },
-                "frames" : 15
-            },
-            "project": {
-                "title": "Command Control",
-                "slug": "command-control",
-                "description": "<p>Command Control is a three person interactive physical game.</p> <p>Players are presented with a situation in which they control a spaceship which is falling apart. As the game is played each player receives messages that require switches, buttons, dials and sliders to be activated or deactivated. Control names are mapped onto a button layout seen on the screen, these change between rounds to make things extra complicated. Players shout out instructions and crazy space controls to attempt to save the ship using their physical controls.</p> <p> Command Control create fun interactions between people.</p> <p>Inspired by the IOS game Spaceteam created by Henry Smith.</p>",
-                "tags": ["Game", "Arduino", "MQTT", "Physical", "Websockets", "Socket.io", "Node.js"],
-                "images": 2,
-                "vimeoID": "67979772",
-                "links": {
-                    "website": "http://commandcontrol.co"
-                }
-            }
-        },
-        {
-            "student": {
-                "name": "Phil Rose",
-                "slug": "phil-rose",
-                "course": "Digital Art & Technology with Interaction Design",
-                "bio": "bio",
-                "links": {
-                    "twitter": "https://twitter.com/PRtheRose",
-                    "website": "http://phil-rose.co.uk/"
-                },
-                "frames" : 17
-            },
-            "project": {
-                "title": "Vulpt",
-                "slug": "vulpt",
-                "description": "<p>Vulpt is a gestural 3D modeling tool built using OpenNI, Processing, Node.js, Socket.io, and Three.js.</p> <p>Vulpt demonstrates how the user can now be in the web page, able to control things within a virtual environment based on gestures.</p> <p>Vulpt aims to move away from more traditional human-computer interaction set-ups in order to create a more intuitive web experience.</p>",
-                "tags": ["OpenNI", "Processing", "Node.js", "Socket.io", "Three.js"],
-                "images": 2,
-                "vimeoID": "67658297",
-                "links": {
-                    "website": "http://phil-rose.co.uk/vulpt"
-                }
-            }
-        },
-        {
-            "student": {
-                "name": "Rachel Dalton",
-                "slug": "rachel-dalton",
-                "course": "Digital Art & Technology with Information Design",
-                "bio": "bio",
-                "links": {
-                    "twitter": "https://twitter.com/rdalton123",
-                    "website": "http://www.rdalton.co.uk/"
-                },
-                "frames" : 15
-            },
-            "project": {
-                "title": "Zoe and Dian",
-                "slug": "zoe-and-dian",
-                "description": "<p>Looks at the technology of moving images, starting with the Zoetrope, and in the future there will be the Dianrang.</p> <p>By researching into the past and comparing it to the present this project aims to show where the technology will advance to in the future.</p> <p>This project also looks at what was and what is entertaining, and predicts what will be the future…</p>",
-                "tags": ["Zoetrope", "Moving Image", "Dianrang"],
-                "images": 2,
-                "vimeoID": "67959834",
-                "links": {
-                    "website": "http://rdalton.co.uk/zoeanddian.html"
-                }
-            }
-        },
-        {
-            "student": {
-                "name": "Florian Brueckner",
-                "slug": "florian-brueckner",
-                "course": "Digital Art & Technology with Interaction Design",
-                "bio": "A guy that is cool.",
-                "links": {
-                    "twitter": "https://twitter.com/bloomingbridges",
-                    "website": "http://bloomingbridges.co.uk/"
-                },
-                "frames" : 17
-            },
-            "project": {
-                "title": "IN//CUBUS",
-                "slug": "in-cubus",
-                "description": "<p>IN//CUBUS is a social experiment with the aim to foster collaboration between strangers in a physical space and to combat the dwindling attention span of long-time internet users.</p>",
-                "tags": ["Cube", "Collaboration"],
-                "images": 2,
-                "vimeoID": "67979708",
-                "links": {
-                    "website": "http://apps.facebook.com/in_cubus"
-                }
-            }
-        },
-        {
-            "student": {
-                "name": "James King",
-                "slug": "james-king",
-                "course": "Digital Art & Technology with Game Design",
-                "bio": "A guy that is cool.",
-                "links": {
-                    "twitter": "https://twitter.com/sorakasumi",
-                    "website": "http://lostwith.me/"
-                },
-                "frames" : 18
-            },
-            "project": {
-                "title": "Squish the Crab",
-                "slug": "squish-the-crab",
-                "description": "<p>A wacky micro-game collection for tablets. Play it now, or don't, it's your choice.</p>",
-                "tags": ["Game", "Android"],
-                "images": 2,
-                "vimeoID": "67979674",
-                "links": {
-                }
-            }
-        },
-        {
-            "student": {
-                "name": "Joe Willmott",
-                "slug": "joe-willmott",
-                "course": "Digital Art & Technology with Game Design",
-                "bio": "A guy that is cool.",
-                "links": {
-                    "twitter": "https://twitter.com/joe_willmott",
-                    "website": "http://joewillmott.com/"
-                },
-                "frames" : 17
-            },
-            "project": {
-                "title": "Smeaton's Tower of Greed",
-                "slug": "smeatons-tower-of-greed",
-                "description": "<p>Smeaton's Tower Of Greed is a multiplayer arcade game in which players must climb Smeaton's Tower, helping eachother to collect as much treasure as possible, whilst also in direct competition.</p> <p>Along the way players are faced with the decision; \"friendship, or greed?\" in circumstances such as reviving your friend... at a cost of half your score, or only the highest-scoring player being allowed to submit their score to the leaderboards.</p> <p>In-game characters share their energy with physical players through motion detection, so if you want to be greedy and gain treasure in-game, you should probably preserve your physical real-world energy.</p>",
-                "tags": ["Game", "Arcade", "Motion Detection"],
-                "images": 2,
-                "vimeoID": "67958928",
-                "links": {
-                }
-            }
-        },
-        {
-            "student": {
-                "name": "Robert Dixon",
-                "slug": "robert-dixon",
-                "course": "Digital Art & Technology with Information Design",
-                "bio": "A guy that is cool.",
-                "links": {
-                    "twitter": "https://twitter.com/RobertDixon_KD",
-                    "website": "http://www.lemoncobweb.co.uk/"
-                },
-                "frames" : 18
-            },
-            "project": {
-                "title": "Operator",
-                "slug": "operator",
-                "description": "<p>Operator is an interactive digital installation designed to highlight increased social information flows.</p> <p>The object initiates the user experience by means of an ultrasonic sensor and an automated ringing system. On answering the phone, the user is prompted to choose between various RSS feeds using the rotary dial. These feeds are spoken by the tts library within Processing, the audio for which is sent directly through to the earpiece.</p> <p>Operator also allows for the recording and play-back of individual user messages.</p>",
-                "tags": ["Telephone", "Processing", "RSS", "Antique"],
-                "images": 2,
-                "vimeoID": "67959154",
-                "links": {
-                }
-            }
-        }
-    ]
-}
+[
+  {
+    "student": {
+      "name": "Saul Hardman",
+      "slug": "saul-hardman",
+      "course": "(BSc.) Digital Art & Technology with Interaction Design",
+      "links": {
+        "twitter": "http://twitter.com/saulhardman",
+        "website": "http://iamsaul.co.uk"
+      },
+      "frames": 17
+    },
+    "project": {
+      "title": "Message Box",
+      "slug": "message-box",
+      "description": "<p>Message Box is an attempt to put the joy back into receiving voicemail.</p><p>Physical, tangible, real objects are, at present, more intimate than their digital counterparts – bits are yet to acquire the charm of the atom.</p><p>Message Box extends a versatile, fine-grained digital voicemail interface into the real world. Benefiting from everything that transition brings with it: affordance, ambience, and embodiment.</p><p>Incoming messages are instantiated as wooden marbles which can be used to playback their corresponding audio files. </p><p>Based on user input and google latitude data; Message Box diverts incoming calls, prompting the caller to leave a message if the recipient is busy, or connecting the call if the user is either available or not in the vicinity of the box.</p>",
+      "tags": [
+        "Object",
+        "Physical",
+        "Tangible",
+        "Voicemail",
+        "Raspberry Pi",
+        "Twilio",
+        "Arduino",
+        "RFID"
+      ],
+      "vimeoId": "67646753",
+      "links": {
+        "website": "http://iamsaul.co.uk/projects/message-box"
+      }
+    }
+  },
+  {
+    "student": {
+      "name": "Ben Ashman",
+      "slug": "ben-ashman",
+      "course": "Digital Art & Technology with Interaction Design",
+      "links": {
+        "twitter": "http://twitter.com/benashman",
+        "website": "http://benashman.co.uk"
+      },
+      "frames": 17
+    },
+    "project": {
+      "title": "Pique",
+      "slug": "pique",
+      "description": "<p>Pique is an experimental photo-sharing app designed to explore how much we can learn about others through the medium of photography.</p> <p>Pique pairs you with another user at random (your Pique Pal) for 30 days, and ecourages you to share unique, intimate insights in to your everyday life.</p> <p>At the end of your time together, you will be asked to share some thoughts about your Pal, the life they lead, and the sort of person they appear to be… and they'll do the same.</p>",
+      "tags": [
+        "Mobile",
+        "iOS",
+        "RubyMotion",
+        "Photo-sharing",
+        "App",
+        "Parse"
+      ],
+      "vimeoId": "67979764",
+      "links": {
+        "website": "http://pique.in"
+      }
+    }
+  },
+  {
+    "student": {
+      "name": "Chris Tough",
+      "slug": "chris-tough",
+      "course": "Digital Art & Technology with Interaction Design",
+      "links": {
+        "twitter": "https://twitter.com/christough",
+        "website": "http://www.christophertough.co.uk/"
+      },
+      "frames": 15
+    },
+    "project": {
+      "title": "Osciller",
+      "slug": "osciller",
+      "description": "<p>Osciller is an installation that augments the way you interact with live digital music.</p> <p>Osciller engages you, the live audience, further by capturing your dancing through a mobile application. With a colour of your choice, you create a visualisation through your movement.</p>",
+      "tags": [
+        "Mobile",
+        "App",
+        "Android",
+        "Live Music",
+        "Audience",
+        "Visualisation"
+      ],
+      "vimeoId": "67959830",
+      "links": {
+        "website": "http://www.christophertough.co.uk/osciller/"
+      }
+    }
+  },
+  {
+    "student": {
+      "name": "Dan Morris",
+      "slug": "dan-morris",
+      "course": "Digital Art & Technology with Information Design",
+      "frames": 18
+    },
+    "project": {
+      "title": "Quake",
+      "slug": "quake",
+      "description": "<p>Quake allows you to view music as sound waves interact with the natural material in place in a technological context creating shapes and patterns.</p> <p>The sound of your choice generates involuntary physical responses through seamless motion from liquid to sculpture.</p>",
+      "tags": [
+        "Audio",
+        "Music",
+        "Sound Sculpture"
+      ],
+      "vimeoId": "67959831"
+    }
+  },
+  {
+    "student": {
+      "name": "Dom Talbot",
+      "slug": "dom-talbot",
+      "course": "Digital Art & Technology with Information Design",
+      "links": {
+        "twitter": "https://twitter.com/Domjtalbot",
+        "website": "http://www.djtalbot.com/"
+      },
+      "frames": 14
+    },
+    "project": {
+      "title": "EXP-duo",
+      "slug": "exp-duo",
+      "description": "<p>EXP-duo gives users a new experience within an architectural space by exposing alternate realities within the space. Whilst walking around the space users may come across negative or positive realities.</p> <p>Behind the exterior, EXPduo runs off a complex integration between Arduino, MQTT, Node.js, MAX 6 and Ableton Live.</p>",
+      "tags": [
+        "Alternate Realities",
+        "Architecture",
+        "Audio"
+      ],
+      "vimeoId": "67959236"
+    }
+  },
+  {
+    "student": {
+      "name": "James Morgan",
+      "slug": "james-morgan",
+      "course": "Digital Media and Animation",
+      "frames": 17
+    },
+    "project": {
+      "title": "Mirrored",
+      "slug": "mirrored",
+      "description": "<p>Mirrored is an experimental video game set in the horror genre. The unique aspect is that the game photographs the player at predetermined \"scary\" moments.</p>",
+      "tags": [
+        "Game",
+        "Horror"
+      ],
+      "vimeoId": "67959234"
+    }
+  },
+  {
+    "student": {
+      "name": "Jessi Dimmock",
+      "slug": "jessi-dimmock",
+      "course": "Digital Art & Technology with Information Design",
+      "frames": 18
+    },
+    "project": {
+      "title": "Visualitube",
+      "slug": "visualitube",
+      "description": "<p>Visualitube is a physical visualisation of live data from the London Underground. It was created to demonstrate and expose the current problems with public transport in order to understand them better.</p> <p>It can run either on live data as it comes in, to be used as a kind of 'news reader', or cycle through the RSS feed from the present backwards.</p>",
+      "tags": [
+        "Tube",
+        "London Underground",
+        "Physical",
+        "Visualisation"
+      ],
+      "vimeoId": "67959785"
+    }
+  },
+  {
+    "student": {
+      "name": "Jonathan Redwood",
+      "slug": "jonathan-redwood",
+      "course": "Digital Art & Technology with Information Design",
+      "links": {
+        "twitter": "https://twitter.com/JonathanRedwood",
+        "website": "http://jred.co.uk/"
+      },
+      "frames": 18
+    },
+    "project": {
+      "title": "Canute",
+      "slug": "canute",
+      "description": "<p>Canute is a machine for visualising the tide. It uses a set of pumps, valves and sensors to raise and lower the water levels in its three tubes. The tube on the left is one hour ago, on the right is one hour from now.</p> <p>Canute can be described as an actualisation as it uses the same physical material it is representing as a medium. The project is part of collection of experiments in the recreation and translation of patterns of physical material in remote locations.</p>",
+      "tags": [
+        "Tide",
+        "Water",
+        "Physical"
+      ],
+      "vimeoId": "67959725"
+    }
+  },
+  {
+    "student": {
+      "name": "Joshua Silvester",
+      "slug": "joshua-silvester",
+      "course": "Digital Media and Animation",
+      "frames": 17
+    },
+    "project": {
+      "title": "The Emotion Experiment",
+      "slug": "the-emotion-experiment",
+      "description": "<p>Films use colour, shape and movement throughout film to emphasize the emotion of the scene. The Emotion Experiment explores how deeply our associations with colour, shape, movement and emotion go.</p> <p>By reducing a film scene down to its most basic shapes, colours and movements. this experiment will allow us to furhter understand how we percieve these emotional triggers and, furthermore, see which ones take the most priority.</p>",
+      "tags": [
+        "Film",
+        "Emotion",
+        "Colour",
+        "Shape"
+      ],
+      "vimeoId": "67959238"
+    }
+  },
+  {
+    "student": {
+      "name": "Lizzie Seymour",
+      "slug": "lizzie-seymour",
+      "course": "Digital Art & Technology with Interaction Design",
+      "links": {
+        "twitter": "https://twitter.com/imaginehonesty",
+        "website": "http://lizz.es/"
+      },
+      "frames": 20
+    },
+    "project": {
+      "title": "Mockingbird",
+      "slug": "mockingbird",
+      "description": "<p>Most technology designed for the autistic community aims to change them to fit our world views. Mockingbird does the opposite.</p> <p>It aims to create empathy for the confusing and beautiful ways adults with autism see the world by creating a real-time experience of their symptoms in their own words, to let you see things from their point of view.</p> <p>Mockingbird - Read someone else's story.</p>",
+      "tags": [
+        "Autism",
+        "Story"
+      ],
+      "vimeoId": "67959156"
+    }
+  },
+  {
+    "student": {
+      "name": "Sam Billingham",
+      "slug": "sam-billingham",
+      "course": "Digital Art & Technology with Interaction Design",
+      "links": {
+        "twitter": "http://twitter.com/sambillingham",
+        "website": "http://sambillingham.com/"
+      },
+      "frames": 15
+    },
+    "project": {
+      "title": "Command Control",
+      "slug": "command-control",
+      "description": "<p>Command Control is a three person interactive physical game.</p> <p>Players are presented with a situation in which they control a spaceship which is falling apart. As the game is played each player receives messages that require switches, buttons, dials and sliders to be activated or deactivated. Control names are mapped onto a button layout seen on the screen, these change between rounds to make things extra complicated. Players shout out instructions and crazy space controls to attempt to save the ship using their physical controls.</p> <p> Command Control create fun interactions between people.</p> <p>Inspired by the IOS game Spaceteam created by Henry Smith.</p>",
+      "tags": [
+        "Game",
+        "Arduino",
+        "MQTT",
+        "Physical",
+        "Websockets",
+        "Socket.io",
+        "Node.js"
+      ],
+      "vimeoId": "67979772",
+      "links": {
+        "website": "http://commandcontrol.co"
+      }
+    }
+  },
+  {
+    "student": {
+      "name": "Phil Rose",
+      "slug": "phil-rose",
+      "course": "Digital Art & Technology with Interaction Design",
+      "links": {
+        "twitter": "https://twitter.com/PRtheRose",
+        "website": "http://phil-rose.co.uk/"
+      },
+      "frames": 17
+    },
+    "project": {
+      "title": "Vulpt",
+      "slug": "vulpt",
+      "description": "<p>Vulpt is a gestural 3D modeling tool built using OpenNI, Processing, Node.js, Socket.io, and Three.js.</p> <p>Vulpt demonstrates how the user can now be in the web page, able to control things within a virtual environment based on gestures.</p> <p>Vulpt aims to move away from more traditional human-computer interaction set-ups in order to create a more intuitive web experience.</p>",
+      "tags": [
+        "OpenNI",
+        "Processing",
+        "Node.js",
+        "Socket.io",
+        "Three.js"
+      ],
+      "vimeoId": "67658297",
+      "links": {
+        "website": "http://phil-rose.co.uk/vulpt"
+      }
+    }
+  },
+  {
+    "student": {
+      "name": "Rachel Dalton",
+      "slug": "rachel-dalton",
+      "course": "Digital Art & Technology with Information Design",
+      "links": {
+        "twitter": "https://twitter.com/rdalton123",
+        "website": "http://www.rdalton.co.uk/"
+      },
+      "frames": 15
+    },
+    "project": {
+      "title": "Zoe and Dian",
+      "slug": "zoe-and-dian",
+      "description": "<p>Looks at the technology of moving images, starting with the Zoetrope, and in the future there will be the Dianrang.</p> <p>By researching into the past and comparing it to the present this project aims to show where the technology will advance to in the future.</p> <p>This project also looks at what was and what is entertaining, and predicts what will be the future…</p>",
+      "tags": [
+        "Zoetrope",
+        "Moving Image",
+        "Dianrang"
+      ],
+      "vimeoId": "67959834",
+      "links": {
+        "website": "http://rdalton.co.uk/zoeanddian.html"
+      }
+    }
+  },
+  {
+    "student": {
+      "name": "Florian Brueckner",
+      "slug": "florian-brueckner",
+      "course": "Digital Art & Technology with Interaction Design",
+      "links": {
+        "twitter": "https://twitter.com/bloomingbridges",
+        "website": "http://bloomingbridges.co.uk/"
+      },
+      "frames": 17
+    },
+    "project": {
+      "title": "IN//CUBUS",
+      "slug": "in-cubus",
+      "description": "<p>IN//CUBUS is a social experiment with the aim to foster collaboration between strangers in a physical space and to combat the dwindling attention span of long-time internet users.</p>",
+      "tags": [
+        "Cube",
+        "Collaboration"
+      ],
+      "vimeoId": "67979708",
+      "links": {
+        "website": "http://apps.facebook.com/in_cubus"
+      }
+    }
+  },
+  {
+    "student": {
+      "name": "James King",
+      "slug": "james-king",
+      "course": "Digital Art & Technology with Game Design",
+      "links": {
+        "twitter": "https://twitter.com/sorakasumi",
+        "website": "http://lostwith.me/"
+      },
+      "frames": 18
+    },
+    "project": {
+      "title": "Squish the Crab",
+      "slug": "squish-the-crab",
+      "description": "<p>A wacky micro-game collection for tablets. Play it now, or don't, it's your choice.</p>",
+      "tags": [
+        "Game",
+        "Android"
+      ],
+      "vimeoId": "67979674",
+      "links": {}
+    }
+  },
+  {
+    "student": {
+      "name": "Joe Willmott",
+      "slug": "joe-willmott",
+      "course": "Digital Art & Technology with Game Design",
+      "links": {
+        "twitter": "https://twitter.com/joe_willmott",
+        "website": "http://joewillmott.com/"
+      },
+      "frames": 17
+    },
+    "project": {
+      "title": "Smeaton's Tower of Greed",
+      "slug": "smeatons-tower-of-greed",
+      "description": "<p>Smeaton's Tower Of Greed is a multiplayer arcade game in which players must climb Smeaton's Tower, helping eachother to collect as much treasure as possible, whilst also in direct competition.</p> <p>Along the way players are faced with the decision; \"friendship, or greed?\" in circumstances such as reviving your friend... at a cost of half your score, or only the highest-scoring player being allowed to submit their score to the leaderboards.</p> <p>In-game characters share their energy with physical players through motion detection, so if you want to be greedy and gain treasure in-game, you should probably preserve your physical real-world energy.</p>",
+      "tags": [
+        "Game",
+        "Arcade",
+        "Motion Detection"
+      ],
+      "vimeoId": "67958928",
+      "links": {}
+    }
+  },
+  {
+    "student": {
+      "name": "Robert Dixon",
+      "slug": "robert-dixon",
+      "course": "Digital Art & Technology with Information Design",
+      "links": {
+        "twitter": "https://twitter.com/RobertDixon_KD",
+        "website": "http://www.lemoncobweb.co.uk/"
+      },
+      "frames": 18
+    },
+    "project": {
+      "title": "Operator",
+      "slug": "operator",
+      "description": "<p>Operator is an interactive digital installation designed to highlight increased social information flows.</p> <p>The object initiates the user experience by means of an ultrasonic sensor and an automated ringing system. On answering the phone, the user is prompted to choose between various RSS feeds using the rotary dial. These feeds are spoken by the tts library within Processing, the audio for which is sent directly through to the earpiece.</p> <p>Operator also allows for the recording and play-back of individual user messages.</p>",
+      "tags": [
+        "Telephone",
+        "Processing",
+        "RSS",
+        "Antique"
+      ],
+      "vimeoId": "67959154"
+    }
+  }
+]

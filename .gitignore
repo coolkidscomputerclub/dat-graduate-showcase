@@ -4,11 +4,7 @@
 # Ignore node_modules required by grunt and alike
 node_modules/
 
-# We don't need the bower installed components
-components/
-
-# SASS cache
-.sass-cache/
-
-# Config data (API keys etc.)
-config.js
+*.min.*
+.nuxt/
+dist/
+assets/data/

@@ -1,0 +1,76 @@
+@import 'box-sizing-border-box/_index.css';
+@import 'normalize.css';
+@import 'tailwindcss/utilities';
+@import '@/assets/css/elements/elements.a.css';
+@import '@/assets/css/elements/elements.button.css';
+
+@font-face {
+  font-family: 'ff-tisa-web-pro';
+  src: url('https://use.typekit.net/af/6a3278/000000000000000000017080/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/6a3278/000000000000000000017080/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/6a3278/000000000000000000017080/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+      format('opentype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ff-tisa-web-pro';
+  src: url('https://use.typekit.net/af/d3823a/000000000000000000017087/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/d3823a/000000000000000000017087/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/d3823a/000000000000000000017087/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('opentype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'orator-std';
+  src: url('https://use.typekit.net/af/59297e/000000000000000000013036/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/59297e/000000000000000000013036/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/59297e/000000000000000000013036/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('opentype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--baseline-font-size);
+  background-color: var(--color-white);
+}
+
+body {
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size-2);
+  color: var(--color-text-color);
+}
+
+::selection {
+  color: white;
+  background: var(--color-gold);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1070px;
+}
+
+.nuxt-progress {
+  background-color: var(--color-gold) !important;
+}

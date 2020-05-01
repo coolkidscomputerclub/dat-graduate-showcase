@@ -1,0 +1,14 @@
+a {
+  color: var(--color-black);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--color-black);
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+    border-bottom-style: solid;
+  }
+
+  &:visited {
+    color: var(--color-black);
+  }
+}

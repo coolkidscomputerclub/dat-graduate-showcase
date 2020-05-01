@@ -1,0 +1,16 @@
+type = "webpack"
+account_id = "4be3bc2ff332394fb01eea9ff9177eb9"
+zone_id = "d9c5030c1d1104fd08ec83342f33345f"
+
+[site]
+bucket = "./dist"
+entry-point = "workers-site"
+
+[env.staging]
+workers_dev = true
+name = "dat"
+vars = { WORKER_ENV = "staging" }
+
+[env.production]
+route = "dat.coolkidscomputer.club/*"
+vars = { WORKER_ENV = "production" }

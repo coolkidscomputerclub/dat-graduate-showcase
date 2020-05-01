@@ -1,0 +1,9 @@
+:root {
+  /* color palette */
+  --color-white: rgb(255, 255, 255);
+  --color-black: rgb(0, 0, 0);
+  --color-grey-dark: rgb(35, 38, 37);
+  --color-grey-light: rgb(237, 237, 238);
+  --color-gold: rgb(191, 157, 62);
+  --color-text-color: #222;
+}
