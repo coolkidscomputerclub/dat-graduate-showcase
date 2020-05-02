@@ -12,5 +12,6 @@ name = "dat"
 vars = { WORKER_ENV = "staging" }
 
 [env.production]
+name="dat-production"
 route = "dat.coolkidscomputer.club/*"
 vars = { WORKER_ENV = "production" }
