@@ -8,3 +8,4 @@ node_modules/
 .nuxt/
 dist/
 assets/data/
+assets/critical-manifest.json

@@ -29,6 +29,7 @@ const fontSize = extractProperties(customProperties, '--font-size-');
 const spacing = extractProperties(customProperties, '--spacing-');
 
 module.exports = {
+  purge: false,
   theme: {
     screens,
     colors: {

@@ -8,6 +8,7 @@ import { projectUrlFromSlug } from './assets/js/urls';
 import BREAKPOINTS from './assets/js/breakpoints';
 import { SITE_TITLE } from './assets/js/constants';
 import entries from './entries.json';
+import criticalManifest from './assets/critical-manifest.json';
 
 const {
   isDevelopment,
@@ -52,6 +53,7 @@ export default {
       'Error: Attribute “loading” not allowed on element “img” at this point.',
       'Warning: Article lacks heading. Consider using “h2”-“h6” elements to add identifying headings to all articles.',
       /^Error: CSS:/,
+      'Error: Attribute “site” not allowed on element “script” at this point.',
     ],
   },
 
@@ -188,7 +190,13 @@ export default {
         src: 'https://cdn.usefathom.com/3.js',
         site: 'LQZWWCJY',
         async: true,
-        once: true,
+      },
+
+      {
+        src: `${URL}${criticalManifest.index}`,
+        async: true,
+        defer: true,
+        body: true,
       },
     ].filter(Boolean),
   },

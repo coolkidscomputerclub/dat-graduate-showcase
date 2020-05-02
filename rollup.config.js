@@ -6,24 +6,24 @@ import commonJs from '@rollup/plugin-commonjs';
 import babel from 'rollup-plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import filesize from 'rollup-plugin-filesize';
+import manifest from 'rollup-plugin-output-manifest';
 
 import {
   isDevelopment,
   isProduction,
-  SITE_ENV,
-  FATHOM_SITE_ID,
   NODE_ENV,
+  SITE_ENV,
 } from './utilities/env';
 import babelConfig from './critical/babel.config';
 
-const CRITICAL_DIR = path.join(process.cwd(), 'critical');
+const { CRITICAL_DIR, ROOT_DIR, STATIC_DIR } = require('./utilities/constants');
 
 const plugins = [
   replace({
     'process.env.NODE_ENV': JSON.stringify(NODE_ENV),
     'process.env.SITE_ENV': JSON.stringify(SITE_ENV),
-    'process.env.FATHOM_SITE_ID': JSON.stringify(FATHOM_SITE_ID),
     'process.server': JSON.stringify(false),
+    'process.client': JSON.stringify(true),
   }),
 
   resolve({
@@ -52,6 +52,12 @@ const plugins = [
     }),
 
   filesize(),
+
+  manifest({
+    fileName: path.join(ROOT_DIR, 'assets/critical-manifest.json'),
+    isMerge: true,
+    nameSuffix: '',
+  }),
 ].filter(Boolean);
 
 export default [
@@ -67,12 +73,14 @@ export default [
     plugins,
   },
 
-  isProduction && {
-    input: path.join(CRITICAL_DIR, 'fathom.js'),
+  {
+    input: path.join(CRITICAL_DIR, 'index.js'),
 
     output: {
-      file: path.join(CRITICAL_DIR, 'fathom.min.js'),
+      dir: STATIC_DIR,
+      entryFileNames: isDevelopment ? 'index.min.js' : 'index.[hash].min.js',
       format: 'iife',
+      sourcemap: true,
     },
 
     plugins,

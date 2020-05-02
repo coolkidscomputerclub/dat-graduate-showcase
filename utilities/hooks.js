@@ -4,7 +4,11 @@ const stripScriptsAndPreloads = html => {
   const $ = cheerio.load(html);
 
   $(
-    ['link[rel="preload"][as="script"]', 'body script']
+    [
+      'link[rel="preload"][as="script"]',
+      'body script[src^="/_nuxt/"]',
+      'body script:not([src])',
+    ]
       .filter(Boolean)
       .join(', '),
   ).remove();
@@ -15,9 +19,7 @@ const stripScriptsAndPreloads = html => {
 export default {
   generate: {
     page(page) {
-      if (page.path === '/404.html') {
-        page.html = stripScriptsAndPreloads(page.html);
-      }
+      page.html = stripScriptsAndPreloads(page.html);
     },
   },
 };

@@ -1,7 +1,7 @@
 <template>
   <img
     ref="sprite"
-    class="lazyload"
+    class="js-image-sequence lazyload"
     :src="sprite.src"
     :srcset="`${placeholder} 1w`"
     :data-srcset="sprite.srcset"
@@ -9,6 +9,11 @@
     :alt="sprite.alt"
     :width="frameCount * 215"
     height="200"
+    :data-frame-count="frameCount"
+    data-frame-rate="12"
+    data-frame-width="215"
+    data-frame-height="215"
+    data-wait-for-image="false"
     @mouseenter="handleMouseEnter"
     @mouseleave="handleMouseLeave"
   />
@@ -17,13 +22,6 @@
 <script>
 import Lemonade from '~/assets/js/lemonade';
 import { TRANSPARENT_PNG as placeholder } from '~/assets/js/images';
-
-const DEFAULT_OPTIONS = {
-  frameRate: 12,
-  frameWidth: 215,
-  frameHeight: 215,
-  waitForImage: false,
-};
 
 export default {
   props: {
@@ -38,12 +36,6 @@ export default {
 
       required: true,
     },
-
-    options: {
-      type: Object,
-
-      default: () => DEFAULT_OPTIONS,
-    },
   },
 
   data() {
@@ -53,10 +45,7 @@ export default {
   },
 
   mounted() {
-    this.lemonade = new Lemonade(this.$refs.sprite, {
-      frameCount: this.frameCount,
-      ...this.options,
-    });
+    this.lemonade = new Lemonade(this.$refs.sprite);
 
     this.lemonade.init();
   },

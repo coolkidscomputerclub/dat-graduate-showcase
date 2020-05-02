@@ -54,7 +54,7 @@ export default class Lemonade {
     return this;
   }
 
-  async init() {
+  init() {
     this.currentFrame = this.options.startFrame;
 
     if (this.currentFrame > 0) {
@@ -62,7 +62,7 @@ export default class Lemonade {
     }
 
     if (this.options.waitForImage === true) {
-      await this.loadImage();
+      return this.loadImage().then(() => this);
     }
 
     return this;
