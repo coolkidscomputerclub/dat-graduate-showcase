@@ -8,12 +8,7 @@ import { terser } from 'rollup-plugin-terser';
 import filesize from 'rollup-plugin-filesize';
 import manifest from 'rollup-plugin-output-manifest';
 
-import {
-  isDevelopment,
-  isProduction,
-  NODE_ENV,
-  SITE_ENV,
-} from './utilities/env';
+import { isDevelopment, NODE_ENV, SITE_ENV } from './utilities/env';
 import babelConfig from './critical/babel.config';
 
 const { CRITICAL_DIR, ROOT_DIR, STATIC_DIR } = require('./utilities/constants');
