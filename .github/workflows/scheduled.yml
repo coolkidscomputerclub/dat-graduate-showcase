@@ -1,9 +1,8 @@
-name: Lint, Build, and Deploy (Production)
+name: Build and Deploy (Production)
 
 on:
-  push:
-    branches:
-      - master
+  schedule:
+    - cron: "0 23 * * *"
 
 jobs:
   build:
@@ -38,9 +37,6 @@ jobs:
     - name: Install Dependencies
       uses: bahmutov/npm-install@v1
 
-    - name: Lint Source Files
-      run: yarn lint
-
     - name: Run Static Site Generator (Production)
       run: yarn build
       env:
@@ -51,14 +47,3 @@ jobs:
         CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       run: |
         npx -p @cloudflare/wrangler wrangler publish --env production
-
-    - name: Update Internet Archive
-      uses: ./.github/actions/auto-archive
-
-    - name: Commit Internet Archive Manifest
-      uses: EndBug/add-and-commit@v4
-      with:
-        message: 'chore(CI): update internet archive manifest'
-        add: internet-archive.json
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
