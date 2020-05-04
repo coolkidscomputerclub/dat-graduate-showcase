@@ -22,8 +22,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
 
     - name: Install Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
@@ -39,8 +37,6 @@ jobs:
 
     - name: Install Dependencies
       uses: bahmutov/npm-install@v1
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
 
     - name: Lint Source Files
       run: yarn lint
