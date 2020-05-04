@@ -40,6 +40,6 @@ export default {
   justify-content: center;
   list-style: none;
   margin: 0 auto;
-  padding: 64px 32px 32px;
+  padding: 60px 30px 30px;
 }
 </style>
