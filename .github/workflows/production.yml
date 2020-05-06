@@ -52,13 +52,13 @@ jobs:
       run: |
         npx -p @cloudflare/wrangler wrangler publish --env production
 
-    # - name: Update Internet Archive
-    #   uses: ./.github/actions/auto-archive
+    - name: Update Internet Archive
+      uses: ./.github/actions/auto-archive
 
-    # - name: Commit Internet Archive Manifest
-    #   uses: EndBug/add-and-commit@v4
-    #   with:
-    #     message: 'chore(CI): update internet archive manifest'
-    #     add: internet-archive.json
-    #   env:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Commit Internet Archive Manifest
+      uses: EndBug/add-and-commit@v4
+      with:
+        message: 'chore(CI): update internet archive manifest'
+        add: internet-archive.json
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
