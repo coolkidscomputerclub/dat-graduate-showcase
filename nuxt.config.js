@@ -70,6 +70,12 @@ export default {
         changefreq: 'yearly',
       },
 
+      {
+        url: '/students/',
+        lastmod: NOW,
+        changefreq: 'yearly',
+      },
+
       ...entries.map(({ project: { slug } }) => ({
         url: projectUrlFromSlug(slug),
         lastmod: NOW,
