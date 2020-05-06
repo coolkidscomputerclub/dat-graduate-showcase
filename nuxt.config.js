@@ -169,13 +169,6 @@ export default {
       },
 
       {
-        hid: 'mask-icon',
-        rel: 'mask-icon',
-        color: '#ffffff',
-        href: '/favicons/safari-pinned-tab.svg',
-      },
-
-      {
         hid: 'favicon',
         rel: 'shortcut icon',
         href: '/favicon.ico',
