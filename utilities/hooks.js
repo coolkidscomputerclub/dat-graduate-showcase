@@ -5,11 +5,7 @@ const stripScriptsAndPreloads = html => {
   const $ = cheerio.load(html);
 
   $(
-    [
-      'link[rel="preload"][as="script"]',
-      'body script[src^="/_nuxt/"]',
-      'body script:not([src])',
-    ]
+    ['link[rel="preload"][as="script"]', 'body script:not([data-hid])']
       .filter(Boolean)
       .join(', '),
   ).remove();

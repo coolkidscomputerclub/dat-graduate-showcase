@@ -178,7 +178,8 @@ export default {
       .map(link => ({ ...link, once: true })),
 
     script: [
-      {
+      !isDevelopment && {
+        hid: 'index-js',
         src: `${URL}${criticalManifest.index}`,
         async: true,
         body: true,
