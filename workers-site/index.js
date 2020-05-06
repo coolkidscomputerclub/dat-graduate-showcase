@@ -64,7 +64,7 @@ async function handleEvent(event) {
       };
     }
 
-    if (url.pathname.includes('/_nuxt/')) {
+    if (url.pathname.includes('/_nuxt/') || url.pathname.endsWith('.min.js')) {
       options.cacheControl = {
         edgeTTL: 365 * 60 * 60 * 24,
       };
@@ -100,7 +100,6 @@ function modifyHeaders(response) {
 
   if (WORKER_ENV === 'staging') {
     response.headers.set('X-Robots-Tag', 'noindex');
-    // TODO: could also remove Fathom script and Coil link here
   }
 
   if (contentType === 'text/html') {
