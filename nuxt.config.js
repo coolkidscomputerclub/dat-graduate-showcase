@@ -201,8 +201,12 @@ export default {
 
       isProduction && {
         hid: 'lobster-js',
-        innerHTML: /* eslint-disable-next-line no-useless-escape */ `
-          window.fathom || document.write('<script src="https://lobster.coolkidscomputer.club/core.js"><\/script>');
+        innerHTML: `
+          window.fathom || (function () {
+            var script = document.createElement('script');
+            script.src = 'https://lobster.coolkidscomputer.club/core.js';
+            document.write(script.outerHTML);
+          })();
         `,
         body: true,
         once: true,
