@@ -60,6 +60,7 @@ export default {
   sitemap: {
     path: '/sitemap.xml',
     hostname: URL,
+    trailingSlash: true,
 
     exclude: ['/404'],
 
@@ -71,7 +72,7 @@ export default {
       },
 
       {
-        url: '/students/',
+        url: '/students',
         lastmod: NOW,
         changefreq: 'yearly',
       },
