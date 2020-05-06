@@ -1,7 +1,6 @@
-# Superfluousness at its finest
 .DS_Store
+*.log
 
-# Ignore node_modules required by grunt and alike
 node_modules/
 
 *.min.*
