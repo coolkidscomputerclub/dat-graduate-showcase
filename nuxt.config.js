@@ -185,20 +185,32 @@ export default {
       .map(link => ({ ...link, once: true })),
 
     script: [
+      {
+        src: `${URL}${criticalManifest.index}`,
+        async: true,
+        body: true,
+      },
+
       isProduction && {
         hid: 'fathom-js',
         src: 'https://cdn.usefathom.com/3.js',
         site: 'LQZWWCJY',
-        async: true,
-      },
-
-      {
-        src: `${URL}${criticalManifest.index}`,
-        async: true,
-        defer: true,
         body: true,
       },
+
+      isProduction && {
+        hid: 'lobster-js',
+        innerHTML: `
+          window.fathom || document.write('<script src="https://lobster.coolkidscomputer.club/core.js"></script>');
+        `,
+        body: true,
+        once: true,
+      },
     ].filter(Boolean),
+
+    __dangerouslyDisableSanitizersByTagID: {
+      'lobster-js': ['innerHTML'],
+    },
   },
 
   /* start `afterNavigation` Vue Meta fix */
