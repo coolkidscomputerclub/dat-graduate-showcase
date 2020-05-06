@@ -194,8 +194,8 @@ export default {
 
       isProduction && {
         hid: 'lobster-js',
-        innerHTML: `
-          window.fathom || document.write('<script src="https://lobster.coolkidscomputer.club/core.js"></script>');
+        innerHTML: /* eslint-disable-next-line no-useless-escape */ `
+          window.fathom || document.write('<script src="https://lobster.coolkidscomputer.club/core.js"><\/script>');
         `,
         body: true,
         once: true,
