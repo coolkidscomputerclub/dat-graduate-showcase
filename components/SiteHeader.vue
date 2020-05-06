@@ -49,7 +49,7 @@ export default {
 <style scoped>
 .site-header {
   margin: 0 auto;
-  padding: 40px 32px;
+  padding: 40px 30px;
 
   @media (--beta) {
     display: flex;

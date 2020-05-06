@@ -1,5 +1,5 @@
 <template>
-  <article class="card">
+  <article class="item-card">
     <div class="media">
       <nuxt-link class="link" :to="url">
         <img
@@ -70,9 +70,16 @@ export default {
 </style>
 
 <style scoped>
+.item-card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 .media {
   position: relative;
   padding: 15px;
+  flex: 0 0 auto;
 }
 
 .border {
@@ -108,6 +115,7 @@ export default {
 .details {
   position: relative;
   padding: 35px 15px;
+  flex: 0 0 100%;
   text-align: center;
   background-color: var(--color-white);
 }

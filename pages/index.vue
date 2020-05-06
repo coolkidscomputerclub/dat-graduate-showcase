@@ -2,7 +2,9 @@
   <main id="main" class="main">
     <site-description />
 
-    <div class="mt-10 border-solid border-0 border-t border-grey-light">
+    <div
+      class="mt-10 border-solid border-0 border-t border-grey-light flex justify-center"
+    >
       <card-list class="container" :items="items" card="project-card" />
     </div>
   </main>
