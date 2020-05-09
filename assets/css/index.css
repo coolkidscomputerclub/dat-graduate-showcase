@@ -74,3 +74,7 @@ body {
 .nuxt-progress {
   background-color: var(--color-gold) !important;
 }
+
+.no-js .lazyload {
+  display: none !important;
+}

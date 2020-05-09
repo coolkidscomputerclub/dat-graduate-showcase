@@ -83,6 +83,12 @@ export default {
 };
 </script>
 
+<style>
+.js .link:hover .sprite {
+  visibility: visible;
+}
+</style>
+
 <style scoped>
 .sprite {
   visibility: hidden;

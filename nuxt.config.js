@@ -311,18 +311,8 @@ export default {
                 ],
 
                 whitelist: ['html', 'body', 'nuxt-progress'],
-                whitelistPatterns: [
-                  /^\.no-js/,
-                  /^\.js/,
-                  /^\.is-/,
-                  /\.focus-visible/,
-                ],
-                whitelistPatternsChildren: [
-                  /^\.no-js/,
-                  /^\.js/,
-                  /^\.is-/,
-                  /\.focus-visible/,
-                ],
+                whitelistPatterns: [/^no-js/, /^js/, /\.focus-visible/],
+                whitelistPatternsChildren: [/^no-js/, /^js/, /\.focus-visible/],
 
                 defaultExtractor: content => content.match(/[\w-/:]+/g) || [],
 

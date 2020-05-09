@@ -5,9 +5,8 @@
         <img
           class="image lazyload"
           :src="image.src"
-          :srcset="`${placeholder} 1w`"
+          :srcset="placeholder"
           :data-srcset="image.srcset"
-          sizes="200px"
           :alt="image.alt"
           width="200"
           height="200"
@@ -62,12 +61,6 @@ export default {
   },
 };
 </script>
-
-<style>
-.link:hover .sprite {
-  visibility: visible;
-}
-</style>
 
 <style scoped>
 .item-card {

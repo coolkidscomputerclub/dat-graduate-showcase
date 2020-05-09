@@ -52,11 +52,10 @@
         <img
           class="student-image lazyload"
           :src="`/img/${student.slug}.jpg`"
-          :srcset="`${placeholder} 1w`"
+          :srcset="placeholder"
           :data-srcset="
             `/img/${student.slug}.jpg 1x, /img/${student.slug}@2x.jpg 2x`
           "
-          sizes="150px"
           :alt="`A profile photo of ${student.name}`"
           width="150"
           height="150"
