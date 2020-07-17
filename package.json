@@ -20,7 +20,7 @@
         "domready": "^1.0.8",
         "focus-visible": "^5.1.0",
         "lazysizes": "^5.2.0",
-        "lodash": "^4.17.15",
+        "lodash": "^4.17.19",
         "normalize.css": "^8.0.1",
         "nuxt": "^2.12.2",
         "tailwindcss": "^1.4.4"
