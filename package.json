@@ -35,7 +35,7 @@
         "@saulhardman/nuxt-html-validate": "^0.0.4",
         "@saulhardman/nuxt-release": "^0.0.5",
         "@saulhardman/nuxt-robotize": "^0.0.4",
-        "axios": "^0.19.2",
+        "axios": "^0.21.2",
         "babel-eslint": "^10.1.0",
         "babel-plugin-module-resolver": "^4.0.0",
         "cheerio": "^1.0.0-rc.3",
