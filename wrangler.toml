@@ -1,17 +1,17 @@
+account_id = "7acd7efa192c36ccdf17b47f6074276c"
 type = "webpack"
-account_id = "4be3bc2ff332394fb01eea9ff9177eb9"
-zone_id = "d9c5030c1d1104fd08ec83342f33345f"
+zone_id = "46013848ddd6e0a3434c9d96f4bc5db1"
 
 [site]
 bucket = "./dist"
 entry-point = "workers-site"
 
 [env.staging]
-workers_dev = true
 name = "dat"
-vars = { WORKER_ENV = "staging" }
+vars = {WORKER_ENV = "staging"}
+workers_dev = true
 
 [env.production]
-name="dat-production"
+name = "dat-production"
 route = "dat.coolkidscomputer.club/*"
-vars = { WORKER_ENV = "production" }
+vars = {WORKER_ENV = "production"}
